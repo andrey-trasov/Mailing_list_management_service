@@ -1,0 +1,36 @@
+{% extends 'mailings/base.html' %}
+{% block content %}
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Клиент</h1>
+      </div>
+    </div>
+  </section>
+
+
+<div class="container">
+   <div class="row text-center">
+       <div class="col-10">
+           <div class="card mb-4 box-shadow">
+
+               <div class="card-body">
+
+                   <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                         <p> {{object.email}} </p>
+                   </ul>
+                   <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                       <li>{{object.fio}}</li>
+                   </ul>
+                   <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                       <li>{{object.comment}}</li>
+                   </ul>
+
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+{% endblock %}

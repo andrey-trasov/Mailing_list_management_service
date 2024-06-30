@@ -1,0 +1,43 @@
+{% extends 'mailings/base.html' %}
+{% block content %}
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">
+            {% if object %}
+            Редактиовать данные клиента
+            {% else %}
+            Создать клиента
+            {% endif %}
+        </h1>
+      </div>
+    </div>
+  </section>
+
+
+<<div class="container">
+   <div class="row">
+       <div class="col">
+           <form class="row" method="post" enctype="multipath/from-data">
+               <div class="card">
+                   <div class="card-body">
+                       {% csrf_token %}
+                       {{ form.as_p }}
+                       <button type="submit" class="btn btn-success">
+                       {% if object %}
+                       Сохранить
+                       {% else %}
+                       Создать
+                       {% endif %}
+                       </button>
+                   </div>
+               </div>
+           </form>
+       </div>
+   </div>
+</div>
+
+
+{% endblock %}
+

@@ -1,0 +1,32 @@
+{% extends 'mailings/base.html' %}
+{% block content %}
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Клиент</h1>
+      </div>
+    </div>
+  </section>
+
+<div class="container">
+   <div class="row">
+       <div class="col">
+           <form class="row" method="post" enctype="multipath/from-data">
+               <div class="card">
+                   <p class="card-text">Действительно хотите удалить клиента? {{ object.fio }}</p>
+                   <div class="card-body">
+                       {% csrf_token %}
+                   </div>
+                   <button type="submit" class="p-2 btn btn-sm btn-outline-secondary">
+                       Удалить
+                   </button>
+                   <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'mailings:client_list' %}">Отмена</a>
+               </div>
+           </form>
+       </div>
+   </div>
+</div>
+
+
+{% endblock %}

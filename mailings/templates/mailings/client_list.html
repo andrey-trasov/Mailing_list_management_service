@@ -1,0 +1,40 @@
+{% extends 'mailings/base.html' %}
+{% block content %}
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Клиенты</h1>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+{% for client in object_list %}
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">{{ client.email }}</h5>
+              <h5 class="card-title">{{ client.fio }}</h5>
+              <p class="card-text">{{ client.comment }}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="{% url 'mailings:client_detail' client.pk %}" role="button">Просмотр</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="{% url 'mailings:client_update' client.pk %}" role="button">Редактировать</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="{% url 'mailings:client_delete' client.pk %}" role="button">Удалить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+{% endfor %}
+
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
