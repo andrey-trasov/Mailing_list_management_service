@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
-from mailings.models import Client, Message
+from mailings.models import Client, Message, Newsletter
 
 #Клиенты
 class ClientListView(ListView):
@@ -45,4 +45,75 @@ class MessageDeleteView(DeleteView):
 class MessageDetailView(DetailView):
     model = Message
 
+#Рассылка
 
+class NewsletterListView(ListView):
+    model = Newsletter
+
+class NewsletterCreateView(CreateView):
+    model = Newsletter
+    fields = ['start_time', 'end_time', 'periodicity', 'status', 'client', 'message']
+    success_url = reverse_lazy('mailings:client_list')
+
+class NewsletterUpdateView(UpdateView):
+    model = Newsletter
+    fields = ['start_time', 'end_time', 'periodicity', 'status', 'client', 'message']
+    success_url = reverse_lazy('mailings:client_list')
+
+class NewsletterDeleteView(DeleteView):
+    model = Newsletter
+    success_url = reverse_lazy('mailings:client_list')
+
+class NewsletterDetailView(DetailView):
+    model = Newsletter
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        client = mailings_newsletter_cliento.objects.filter(id=newsletter_id)
+        context['object'].client = client
+        return context
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # context['client'] = Message.objects.filter(client__in=context['object'].client.all())
+        # return context
+
+    # class ProductListView(ListView):
+    #     model = Product
+    #
+    #     def get_context_data(self, *args, **kwargs):
+    #         context = super().get_context_data(*args, **kwargs)
+    #         for product in context['object_list']:
+    #             versions = Version.objects.filter(product=product)  # другой вариант обращения product = product.pk)
+    #
+
+    #             if active_versions:
+    #                 product.active_version = active_versions.last().version_name
+    #
+    #
+    #             else:
+    #                 product.active_version = 'Нет активной версии'
+    #         return context

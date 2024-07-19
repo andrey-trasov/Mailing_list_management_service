@@ -1,0 +1,830 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-06-27T13:48:32.368Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "aa ss dd (a1@gmail.com)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-06-27T13:48:42.684Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "aa ss dd (a2@gmail.com)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-06-27T13:48:49.580Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "aa ss dd (a3@gmail.com)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-06-27T13:48:52.588Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "aa ss dd (a3@gmail.com)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-06-27T13:49:04.715Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "33qr3rwr",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-06-27T13:49:11.030Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "c3rc2rc2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-06-27T13:50:00.252Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "3t3t (a4@gmail.com)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2024-06-27T13:50:38.009Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Время: 2024-06-27 13:49:19+00:00 - 2024-06-28 13:49:20+00:00, статус рассылки: создана, периодичность рассылки: раз в день",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2024-06-27T13:50:45.273Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Время: 2024-06-27 13:49:19+00:00 - 2024-06-28 13:49:20+00:00, статус рассылки: создана, периодичность рассылки: раз в день",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2024-06-30T11:04:54.098Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "У нас появился новый товар",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2024-07-18T08:31:35.147Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "Тарасов Андрей Алексеевич (a4@gmail.com)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2024-07-18T08:31:35.160Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "aa ss dd (a3@gmail.com)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2024-07-18T08:31:35.161Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "aa ss dd (a2@gmail.com)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2024-07-18T08:31:35.162Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "aa ss dd (a1@gmail.com)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2024-07-18T08:31:59.196Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "У нас появился новый товар",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2024-07-18T08:31:59.198Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "c3rc2rc2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2024-07-18T16:22:06.511Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "Время: 2024-06-27 13:49:19+00:00 - 2024-06-28 13:49:20+00:00, статус рассылки: создана, периодичность рассылки: раз в день",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2024-07-18T16:22:27.646Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "3",
+      "object_repr": "Время: 2024-07-16 06:00:00+00:00 - 2024-07-31 12:00:00+00:00, статус рассылки: создана, периодичность рассылки: раз в неделю",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2024-07-18T16:22:46.711Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "Время: 2024-07-15 16:22:34+00:00 - 2024-07-03 16:22:39+00:00, статус рассылки: создана, периодичность рассылки: раз в месяц",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2024-07-18T16:25:11.014Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "Время: 2024-07-15 16:22:34+00:00 - 2024-07-03 16:22:39+00:00, статус рассылки: создана, периодичность рассылки: раз в месяц",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043b\\u0438\\u0435\\u043d\\u0442\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add клиент",
+      "content_type": 7,
+      "codename": "add_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change клиент",
+      "content_type": 7,
+      "codename": "change_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete клиент",
+      "content_type": 7,
+      "codename": "delete_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view клиент",
+      "content_type": 7,
+      "codename": "view_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add лог попыток отправки письма",
+      "content_type": 8,
+      "codename": "add_logs"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change лог попыток отправки письма",
+      "content_type": 8,
+      "codename": "change_logs"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete лог попыток отправки письма",
+      "content_type": 8,
+      "codename": "delete_logs"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view лог попыток отправки письма",
+      "content_type": 8,
+      "codename": "view_logs"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Сообщение",
+      "content_type": 9,
+      "codename": "add_message"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Сообщение",
+      "content_type": 9,
+      "codename": "change_message"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Сообщение",
+      "content_type": 9,
+      "codename": "delete_message"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Сообщение",
+      "content_type": 9,
+      "codename": "view_message"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add рассылка",
+      "content_type": 10,
+      "codename": "add_newsletter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change рассылка",
+      "content_type": 10,
+      "codename": "change_newsletter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete рассылка",
+      "content_type": 10,
+      "codename": "delete_newsletter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view рассылка",
+      "content_type": 10,
+      "codename": "view_newsletter"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$8hRAjmdIaMh3TXx3VmChHZ$7tJkAchEd1+qN56iVWB4jD9xkFkBN3yhsuLTpDPULn4=",
+      "last_login": "2024-07-18T08:31:11.500Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-06-27T13:46:45.319Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "mailings",
+      "model": "client"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "mailings",
+      "model": "logs"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "mailings",
+      "model": "message"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "mailings",
+      "model": "newsletter"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "93nizvj5yngujw31m624evd09z11ji70",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQRO_iGlnZyNgbSnrOYO0vJIBsKZ8KcXcSKQVUI817M2-XaV2GvM425VHdxYE7_XZM8rSyA31QuVcvtSzTyH5X_EFnf6tqr-vh_h0MNA_bupfYYJQtkODcYwvCzILShdgkg5TMDBsNBF1QYsAkXUwKLStzYPf5AgBJOMY:1sMpSv:4vhvS4hlFrz2keMpyhmPNaAVjPQs-R3xaDD7Tz__Big",
+      "expire_date": "2024-07-11T13:47:09.216Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "9l65jqi80cy603b9j3zlwsa9lgmxov32",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQRO_iGlnZyNgbSnrOYO0vJIBsKZ8KcXcSKQVUI817M2-XaV2GvM425VHdxYE7_XZM8rSyA31QuVcvtSzTyH5X_EFnf6tqr-vh_h0MNA_bupfYYJQtkODcYwvCzILShdgkg5TMDBsNBF1QYsAkXUwKLStzYPf5AgBJOMY:1sMpSv:4vhvS4hlFrz2keMpyhmPNaAVjPQs-R3xaDD7Tz__Big",
+      "expire_date": "2024-07-11T13:47:09.352Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "qd9fav3p9f7wvrprr69no0rqlkympf8d",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQRO_iGlnZyNgbSnrOYO0vJIBsKZ8KcXcSKQVUI817M2-XaV2GvM425VHdxYE7_XZM8rSyA31QuVcvtSzTyH5X_EFnf6tqr-vh_h0MNA_bupfYYJQtkODcYwvCzILShdgkg5TMDBsNBF1QYsAkXUwKLStzYPf5AgBJOMY:1sMpSv:4vhvS4hlFrz2keMpyhmPNaAVjPQs-R3xaDD7Tz__Big",
+      "expire_date": "2024-07-11T13:47:09.274Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "x0o6vad0ayv2vaxhnyfp0afha9x2e5bo",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSEwpTxcuvcbyAwMUjU0Ke3K-O_apAvd3nPOfYmI21rj1nmJUxZnocXpdyNMD247yHdst1mmua3LRHJX5EG7vM6Zn5fD_Tuo2Ou3psCsVcZgfHK6jACeDUBRA3DwDtNoIDgLXqswkEYFithqS8b4ojCI9wfKyDbc:1sUMXf:LV3qv_q36rG69WwvkROX9CyuLHwlbV4HDITP3jAD33Y",
+      "expire_date": "2024-08-01T08:31:11.501Z"
+    }
+  },
+  {
+    "model": "mailings.client",
+    "pk": 7,
+    "fields": {
+      "email": "p.te.1@yandex.ru",
+      "fio": "Тарасов Андрей Алексеевич",
+      "comment": "Хочу скидку на ваши товары!!!"
+    }
+  },
+  {
+    "model": "mailings.client",
+    "pk": 8,
+    "fields": {
+      "email": "py.te.1@mail.ru",
+      "fio": "Иванов ИвАн Иванович",
+      "comment": "Добрый день"
+    }
+  },
+  {
+    "model": "mailings.message",
+    "pk": 4,
+    "fields": {
+      "subject": "У нас появился новый товар",
+      "body": "Хотим проинформировать вас о пополнении на нашем складе."
+    }
+  },
+  {
+    "model": "mailings.message",
+    "pk": 5,
+    "fields": {
+      "subject": "Скидки",
+      "body": "Ура!!! У нас появились скидки."
+    }
+  },
+  {
+    "model": "mailings.newsletter",
+    "pk": 2,
+    "fields": {
+      "start_time": "2024-06-27T13:49:19Z",
+      "end_time": "2024-06-28T13:49:20Z",
+      "periodicity": "раз в день",
+      "status": "создана",
+      "message": 4,
+      "client": [
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "model": "mailings.newsletter",
+    "pk": 3,
+    "fields": {
+      "start_time": "2024-07-16T06:00:00Z",
+      "end_time": "2024-07-31T12:00:00Z",
+      "periodicity": "раз в неделю",
+      "status": "создана",
+      "message": 5,
+      "client": [
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "model": "mailings.newsletter",
+    "pk": 4,
+    "fields": {
+      "start_time": "2024-07-15T16:22:34Z",
+      "end_time": "2024-07-03T16:22:39Z",
+      "periodicity": "раз в месяц",
+      "status": "создана",
+      "message": 4,
+      "client": [
+        8
+      ]
+    }
+  }
+]

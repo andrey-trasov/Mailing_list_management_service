@@ -1,0 +1,35 @@
+{% extends 'mailings/base.html' %}
+{% block content %}
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Рассылка</h1>
+      </div>
+    </div>
+  </section>
+
+
+<div class="container">
+   <div class="row text-center">
+       <div class="col-10">
+           <div class="card mb-4 box-shadow">
+
+               <div class="card-body">
+
+
+                       <h5 class="card-title">{{ object.message }}</h5>
+                <h5 class="card-title">{{ object.status }}</h5>
+                <h5 class="card-title">{{ object.periodicity }}</h5>
+                <p class="card-text">{{ с.start_time }}</p>
+                <p class="card-text">{{ object.end_time }}</p>
+                   <p class="card-text">{{ object.client }}</p>
+
+
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+{% endblock %}
