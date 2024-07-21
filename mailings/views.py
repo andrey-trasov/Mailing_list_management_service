@@ -67,13 +67,18 @@ class NewsletterDeleteView(DeleteView):
 class NewsletterDetailView(DetailView):
     model = Newsletter
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        client = mailings_newsletter_cliento.objects.filter(id=newsletter_id)
-        context['object'].client = client
-        return context
+    # def get_context_data(self, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     client = mailings_newsletter_cliento.objects.filter(id=newsletter_id)
+    #     context['object'].client = client
+    #     return context
 
-
+    # def get_queryset(self):
+    #     queryset = super().get_queryset()
+    #     queryset = queryset.filter(id=self.kwargs.get('pk'))
+    #     if not self.request.user.is_staff:
+    #         queryset = queryset.filter(owner=self.request.user)
+    #     return queryset
 
 
 
