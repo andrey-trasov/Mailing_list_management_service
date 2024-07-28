@@ -9,20 +9,18 @@
     </div>
   </section>
 
-
-<div class="container">
+<div class="contFainer">
    <div class="row text-center">
        <div class="col-10">
            <div class="card mb-4 box-shadow">
 
                <div class="card-body">
-
-
-                       <h5 class="card-title">{{ object.message }}</h5>
+                <h5 class="card-title">{{ object.message }}</h5>
                 <h5 class="card-title">{{ object.status }}</h5>
                 <h5 class="card-title">{{ object.periodicity }}</h5>
                 <p class="card-text">{{ object.start_time }}</p>
                 <p class="card-text">{{ object.end_time }}</p>
+                   <li>Клиенты: {% for client in object.client.all %} {{client.email}} {% endfor %}</li>
                </div>
            </div>
        </div>

@@ -38,6 +38,7 @@ class Newsletter(models.Model):
     """
     start_time = models.DateTimeField(verbose_name='время начала отправки рассылки')
     end_time = models.DateTimeField(verbose_name='время окончания отправки рассылки')
+    time_last_shipment = models.DateTimeField(verbose_name='время последней отправки сообщения', blank=True, null=True)
 
     daily = 'раз в день'
     weekly = 'раз в неделю'
