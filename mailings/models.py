@@ -40,21 +40,19 @@ class Newsletter(models.Model):
     end_time = models.DateTimeField(verbose_name='время окончания отправки рассылки')
     time_last_shipment = models.DateTimeField(verbose_name='время последней отправки сообщения', blank=True, null=True)
 
-    daily = 'раз в день'
-    weekly = 'раз в неделю'
-    monthly = 'раз в месяц'
     Periodicity = [
-        (daily,'раз в день'),(weekly,'раз в неделю'),(monthly,'раз в месяц')
+        ('daily','раз в день'),
+        ('weekly','раз в неделю'),
+        ('monthly','раз в месяц')
     ]
     periodicity = models.CharField(max_length=20,verbose_name='периодичность',choices=Periodicity)
 
-    finished = 'завершена'
-    created = 'создана'
-    launched = 'запущена'
     Status = [
-        (finished, 'завершена'), (created, 'создана'), (launched, 'запущена')
+        ('finished', 'завершена'),
+        ('created', 'создана'),
+        ('launched', 'запущена')
     ]
-    status = models.CharField(max_length=20,verbose_name='статус рассылки',choices=Status,default=created)
+    status = models.CharField(max_length=20,verbose_name='статус рассылки',choices=Status)
 
     client = models.ManyToManyField(Client,verbose_name='клиент')
     message = models.ForeignKey(Message,verbose_name='сообщение',on_delete=models.CASCADE)
