@@ -26,10 +26,10 @@ class Command(BaseCommand):
 
         scheduler.add_job(
             send_mailing,
-            trigger=IntervalTrigger(seconds=1),
+            trigger=IntervalTrigger(seconds=60),
             id="check_mailings",
-            seconds=1,
-            max_instances=1,
+            seconds=60,
+            max_instances=10,
             replace_existing=True,
             # coalesce=True,
             # misfire_grace_time=60,

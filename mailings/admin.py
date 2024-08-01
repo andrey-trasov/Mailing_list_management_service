@@ -12,8 +12,8 @@ class MessageAdmin(admin.ModelAdmin):
 
 @admin.register(Newsletter)
 class NewsletterAdmin(admin.ModelAdmin):
-    list_display = ("start_time", "end_time", "periodicity", "status")
+    list_display = ("name", "start_time", "end_time", "time_last_shipment", "periodicity", "status", "message")
 
 @admin.register(Logs)
 class LogsAdmin(admin.ModelAdmin):
-    list_display = ("attempt_time", "attempt", "response")
+    list_display = ("name", "mailing", "attempt_time", "attempt", "comments", "response")

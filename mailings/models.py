@@ -36,6 +36,7 @@ class Newsletter(models.Model):
     """
     настройки рассылки
     """
+    name = models.CharField(max_length=50, verbose_name='Название рассылки', **NULLABLE)
     start_time = models.DateTimeField(verbose_name='время начала отправки рассылки')
     end_time = models.DateTimeField(verbose_name='время окончания отправки рассылки')
     time_last_shipment = models.DateTimeField(verbose_name='время последней отправки сообщения', blank=True, null=True)
@@ -62,13 +63,16 @@ class Newsletter(models.Model):
         verbose_name = "рассылка"
         verbose_name_plural = "рассылки"
     def __str__(self):
-        return f'Время: {self.start_time} - {self.end_time}, статус рассылки: {self.status}, периодичность рассылки: {self.periodicity}'
+        return f'Рассылка {self.name}, время: {self.start_time} - {self.end_time}'
 
 
 class Logs(models.Model):
+    name = models.CharField(max_length=50, verbose_name='Название рассылки', default="Рассылка")
+    mailing = models.ForeignKey(Newsletter, related_name='attempts', on_delete=models.CASCADE, **NULLABLE)
     attempt_time = models.DateTimeField(verbose_name='дата и время последней попытки')
-    attempt = models.BooleanField(verbose_name='статус попытки')
-    response = models.CharField(max_length=100,verbose_name='ответ почтового сервера',**NULLABLE)
+    attempt = models.CharField(max_length=50, verbose_name='статус попытки')
+    comments = models.TextField(max_length=50, verbose_name='Комментарии', **NULLABLE)
+    response = models.TextField (verbose_name='ответ почтового сервера', **NULLABLE)
 
     class Meta:
         verbose_name = "лог попыток отправки письма"
@@ -76,13 +80,3 @@ class Logs(models.Model):
 
     def __str__(self):
         return f'{self.attempt_time} - {self.attempt}'
-
-
-
-
-
-
-
-
-
-

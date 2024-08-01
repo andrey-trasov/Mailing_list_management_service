@@ -1,10 +1,10 @@
 from datetime import datetime
-from smtplib import SMTPDataError, SMTPException
+from smtplib import SMTPException
 
 import pytz
 from django.conf import settings
 
-from mailings.models import Newsletter, Message, Client
+from mailings.models import Newsletter, Logs
 from django.utils import timezone
 
 from django.core.mail import send_mail
@@ -63,7 +63,7 @@ def checking_date():
         #Если пришло время отправлять сообщение (отправений сообщений еще не было, или пришло время отправки)
         if mailing.time_last_shipment == None or mailing.time_last_shipment + timezone.timedelta(days=days) <= time_now:
             mailing.time_last_shipment = time_now
-            # mailing.save()
+            mailing.save()
             send_emails(mailing)    # передаем 1 рассылку для отправки сообщений
 
 
@@ -74,6 +74,9 @@ def send_emails(mailing):
     """
     Отправка письма
     """
+    number_clients = 0    # количество клиетов
+    sent_successfully = 0    # количество успешно отправленных соощений
+    response = []    # ответ сервера
 
     # mailings = Newsletter.objects.filter(status='finished')
     # mailing = mailings[0]
@@ -89,6 +92,7 @@ def send_emails(mailing):
     # emails = []
     clients = mailing.client.all()
     for client in clients:
+        number_clients += 1
         # client.email
     # print(emails)
 
@@ -105,12 +109,50 @@ def send_emails(mailing):
                 recipient_list=[client.email],  # список имейлов на которые отправляем
                 fail_silently = False,
             )
-            print(send_mail)
-        except SMTPException as e:
-            print('Ошибка при отправке письма')
-            print(e)
+            sent_successfully += 1
+            response.append(str(send_mail))
 
-        print()
+            # print(send_mail)
+        except SMTPException as e:
+            response.append(str(e))
+        #     print('Ошибка при отправке письма')
+        #     print(e)
+        #
+        # print()
+    logs(mailing, number_clients, sent_successfully, response)
+
+def logs(mailing, number_clients, sent_successfully, response):
+
+    time_zone = pytz.timezone(settings.TIME_ZONE)
+    time_now = datetime.now(time_zone)    #время отправки
+    # высчитываем статус рассылки
+    if number_clients > 0 and sent_successfully > 0 and number_clients / sent_successfully <= 2:
+        status = 'успешно'    #доставлено более 50% клиентам
+
+    else:
+        status = 'не успешно'
+
+    if len(response) == 0:
+        response.append('Нет ответа от сервера')
+
+    Logs.objects.create(
+        name=mailing.name,
+        mailing=mailing,
+        attempt_time=time_now,
+        attempt=status,
+        comments=f'Успешно доставлено {sent_successfully} клиентам из {number_clients}',
+        response=f'{'\n'.join(response)}'
+    )
+    # print(response)
+
+
+
+    # MailingAttempt.objects.create(
+    #     mailing=mailing,
+    #     status=status,
+    #     server_response=server_response,
+    #     client_email=client.email
+
 
 
 

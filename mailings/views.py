@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
-from mailings.models import Client, Message, Newsletter
+from mailings.models import Client, Message, Newsletter, Logs
 
 #Клиенты
 class ClientListView(ListView):
@@ -52,12 +52,12 @@ class NewsletterListView(ListView):
 
 class NewsletterCreateView(CreateView):
     model = Newsletter
-    fields = ['start_time', 'end_time', 'periodicity', 'status', 'client', 'message']
+    fields = ["name", "start_time", "end_time", "periodicity", "status", "message"]
     success_url = reverse_lazy('mailings:client_list')
 
 class NewsletterUpdateView(UpdateView):
     model = Newsletter
-    fields = ['start_time', 'end_time', 'periodicity', 'status', 'client', 'message']
+    fields = ["name", "start_time", "end_time", "periodicity", "status", "message"]
     success_url = reverse_lazy('mailings:client_list')
 
 class NewsletterDeleteView(DeleteView):
@@ -67,58 +67,7 @@ class NewsletterDeleteView(DeleteView):
 class NewsletterDetailView(DetailView):
     model = Newsletter
 
-    # def get_context_data(self, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     client = mailings_newsletter_cliento.objects.filter(id=newsletter_id)
-    #     context['object'].client = client
-    #     return context
 
-    # def get_queryset(self):
-    #     queryset = super().get_queryset()
-    #     queryset = queryset.filter(id=self.kwargs.get('pk'))
-    #     if not self.request.user.is_staff:
-    #         queryset = queryset.filter(owner=self.request.user)
-    #     return queryset
+class LogsListView(ListView):
+    model = Logs
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        # context['client'] = Message.objects.filter(client__in=context['object'].client.all())
-        # return context
-
-    # class ProductListView(ListView):
-    #     model = Product
-    #
-    #     def get_context_data(self, *args, **kwargs):
-    #         context = super().get_context_data(*args, **kwargs)
-    #         for product in context['object_list']:
-    #             versions = Version.objects.filter(product=product)  # другой вариант обращения product = product.pk)
-    #
-
-    #             if active_versions:
-    #                 product.active_version = active_versions.last().version_name
-    #
-    #
-    #             else:
-    #                 product.active_version = 'Нет активной версии'
-    #         return context
