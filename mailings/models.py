@@ -1,5 +1,6 @@
 from django.db import models
 
+from user.models import User
 
 NULLABLE = {'null': True, 'blank': True}
 class Client(models.Model):
@@ -9,6 +10,7 @@ class Client(models.Model):
     email = models.EmailField(verbose_name="почта", unique=True)
     fio = models.CharField(verbose_name="ФИО", max_length=150)
     comment = models.TextField(verbose_name="комментарий", **NULLABLE)
+    owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
 
     class Meta:
         verbose_name = "клиент"
@@ -23,6 +25,7 @@ class Message(models.Model):
     """
     subject = models.CharField(max_length=50,verbose_name='тема письма')
     body = models.TextField(verbose_name='тело письма')
+    owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
 
 
     class Meta:
@@ -57,6 +60,7 @@ class Newsletter(models.Model):
 
     client = models.ManyToManyField(Client,verbose_name='клиент')
     message = models.ForeignKey(Message,verbose_name='сообщение',on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
 
 
     class Meta:
@@ -73,6 +77,7 @@ class Logs(models.Model):
     attempt = models.CharField(max_length=50, verbose_name='статус попытки')
     comments = models.TextField(max_length=50, verbose_name='Комментарии', **NULLABLE)
     response = models.TextField (verbose_name='ответ почтового сервера', **NULLABLE)
+    owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
 
     class Meta:
         verbose_name = "лог попыток отправки письма"
