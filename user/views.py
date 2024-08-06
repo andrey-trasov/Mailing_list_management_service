@@ -5,7 +5,7 @@ from myproject.settings import EMAIL_HOST_USER
 
 
 from django.urls import reverse_lazy, reverse
-from django.views.generic import CreateView, ListView, UpdateView
+from django.views.generic import CreateView, ListView, UpdateView, DetailView
 from user.forms import UserRegisterForm
 from user.models import User
 
@@ -62,11 +62,19 @@ class UserListView(ListView):
 
 class UserUpdateView(UpdateView):
     model = User
-    fields = ['is_active', ]
-    success_url = reverse_lazy('users:list')
+    fields = ['email', 'phone', 'avatar', 'country']
+    success_url = reverse_lazy('mailings:client_list')
 
-    def get_form_class(self):
-        user = self.request.user
-        if user.has_perm('users.set_active'):
-            user.is_active = False
-            user.save()
+
+
+class UserDetailView(DetailView):
+    model = User
+
+
+
+
+
+
+
+
+

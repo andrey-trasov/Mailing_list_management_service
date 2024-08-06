@@ -1,7 +1,7 @@
 from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import path
 from user.apps import UserConfig
-from user.views import UserCreateView, email_verification, UserListView, UserUpdateView
+from user.views import UserCreateView, email_verification, UserListView, UserDetailView, UserUpdateView
 
 app_name = UserConfig.name
 
@@ -13,5 +13,5 @@ urlpatterns = [
    path('email-confirm/<str:token>/', email_verification, name='email-confirm'),
    path('user_list/', UserListView.as_view(), name='user_list'),
    path('user_update/<int:pk>/',UserUpdateView.as_view(), name='user_update'),
-
+   path('user/<int:pk>/', UserDetailView.as_view(), name='user_detail'),
 ]

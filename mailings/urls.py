@@ -1,3 +1,4 @@
+from django.views.decorators.cache import cache_page
 from django.urls import path
 from mailings.apps import MailingsConfig
 from mailings.views import ClientListView, ClientCreateView, ClientDetailView, ClientUpdateView, ClientDeleteView, \
@@ -21,8 +22,8 @@ urlpatterns = [
     path('newsletter_update/<int:pk>/',NewsletterUpdateView.as_view(), name='newsletter_update'),
     path('newsletter_delete/<int:pk>/', NewsletterDeleteView.as_view(), name='newsletter_delete'),
     path('newsletter/<int:pk>/', NewsletterDetailView.as_view(), name='newsletter_detail'),
-    path('logs_list/', LogsListView.as_view(), name='logs_list'),
-    path('', index_data)
+    path('logs_list/', cache_page(60)(LogsListView.as_view()), name='logs_list'),
+    path('', index_data, name='main')
 ]
 
 

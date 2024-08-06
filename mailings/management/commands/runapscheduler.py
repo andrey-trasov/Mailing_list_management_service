@@ -6,7 +6,6 @@ from django.core.management.base import BaseCommand
 from django_apscheduler.jobstores import DjangoJobStore
 from django_apscheduler.models import DjangoJobExecution
 from django_apscheduler import util
-# from mailings.utils import check_and_send_mailings
 from mailings.utils import send_mailing
 
 logger = logging.getLogger(__name__)

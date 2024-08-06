@@ -8,15 +8,16 @@
             <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'user:register' %}">Регистрация</a>
         {% endif %}
 
+        <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'mailings:main' %}">Главная</a>
+        <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'blog:blog_list' %}">Блоги</a>
 
             {% if user.is_authenticated %}
+        <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'user:user_detail' user.pk %}" role="button">Профиль</a>
         <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'mailings:client_list' %}">Клиенты</a>
-        <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'mailings:client_create' %}">Создать клиента</a>
         <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'mailings:message_list' %}">Сообщения</a>
-        <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'mailings:message_create' %}">Создать сообщение</a>
         <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'mailings:newsletter_list' %}">Рассылки</a>
-        <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'mailings:newsletter_create' %}">Создать рассылку</a>
         <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'mailings:logs_list' %}">Статистика</a>
+
         {% if perms.user.can_view_the_list_of_users_of_the_service %}
             <a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'user:user_list' %}" role="button">Пользователи</a>
         {% endif %}
