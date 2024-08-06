@@ -61,6 +61,7 @@ class Newsletter(models.Model):
     client = models.ManyToManyField(Client,verbose_name='клиент')
     message = models.ForeignKey(Message,verbose_name='сообщение',on_delete=models.CASCADE)
     owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
+    is_active = models.BooleanField(default=True, verbose_name='Включена/отключена')
 
 
     class Meta:

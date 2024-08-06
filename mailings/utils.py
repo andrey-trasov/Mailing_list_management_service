@@ -41,7 +41,7 @@ def checking_date():
     """
     time_zone = pytz.timezone(settings.TIME_ZONE)
     time_now = datetime.now(time_zone)
-    mailings = Newsletter.objects.filter(status='launched')
+    mailings = Newsletter.objects.filter(status='launched', is_active=True)
     for mailing in mailings:
         #Проверяем количество дней для новой отправки
         if mailing.periodicity == 'daily':

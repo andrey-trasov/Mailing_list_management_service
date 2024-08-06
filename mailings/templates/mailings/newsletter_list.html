@@ -27,7 +27,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                     <a class="btn btn-sm btn-outline-secondary" href="{% url 'mailings:newsletter_detail' newsletter.pk %}" role="button">Просмотр</a>
-                    {% if user == newsletter.owner or perms.mailings.can_disable_mailing_lists %}
+                    {% if user == newsletter.owner %}
                     <a class="btn btn-sm btn-outline-secondary" href="{% url 'mailings:newsletter_update' newsletter.pk %}" role="button">Редактировать</a>
                     {% endif %}
                     {% if user == newsletter.owner %}
@@ -35,15 +35,16 @@
                     {% endif %}
 
 
-
+                    {% if perms.mailings.can_disable_mailing_lists %}
                     <form method="POST">
                     {% csrf_token %}
-                    {% if user.is_active %}
-                    <button type="submit" class="btn btn-mb btn-outline-danger" name="status" value="{{ user.id }}">Отключить рассылку</button>
+                    {% if newsletter.is_active %}
+                    <button type="submit" class="btn btn-mb btn-outline-danger" name="status" value="{{ newsletter.id }}">Отключить рассылку</button>
                     {% else %}
-                    <button type="submit" class="btn btn-mb btn-outline-success" name="status" value="{{ user.id }}">Включить рассылку</button>
+                    <button type="submit" class="btn btn-mb btn-outline-success" name="status" value="{{ newsletter.id }}">Включить рассылку</button>
                     {% endif %}
                     </form>
+                    {% endif %}
 
 
 

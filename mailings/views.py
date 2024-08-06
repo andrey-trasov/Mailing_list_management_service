@@ -1,6 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
 
@@ -100,13 +100,14 @@ class NewsletterListView(ListView):
         return queryset
 
     def post(self, request, *args, **kwargs):
-        user = Newsletter.objects.filter(pk=request.POST.get('status')).first()
-        if user.is_active:
-            user.is_active = False
+        mailing = Newsletter.objects.filter(pk=request.POST.get('status')).first()
+        print(mailing)
+        if mailing.is_active:
+            mailing.is_active = False
         else:
-            user.is_active = True
-        user.save()
-        return redirect('user:user_list')
+            mailing.is_active = True
+        mailing.save()
+        return redirect('mailings:newsletter_list')
 
 
 class NewsletterCreateView(LoginRequiredMixin, CreateView):
@@ -120,7 +121,7 @@ class NewsletterCreateView(LoginRequiredMixin, CreateView):
         return kwargs
 
     def form_valid(self, form):
-        product = form.save()
+        product = form.save(commit=False)
         user = self.request.user  # получаю авторизованного пользователя
         product.owner = user
         product.save()
@@ -128,7 +129,7 @@ class NewsletterCreateView(LoginRequiredMixin, CreateView):
 
 class NewsletterUpdateView(LoginRequiredMixin, UpdateView):
     model = Newsletter
-    fields = ["name", "start_time", "end_time", "periodicity", "status", "message"]
+    # fields = ["name", "start_time", "end_time", "periodicity", "status", "message"]
     success_url = reverse_lazy('mailings:client_list')
 
     def get_form_kwargs(self):################################ добавляем переменную
