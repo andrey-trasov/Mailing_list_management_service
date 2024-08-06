@@ -1,14 +1,16 @@
 from django.db import models
 
+from user.models import User
 
 NULLABLE = {'null': True, 'blank': True}
 class Client(models.Model):
     """
     клиенты (получают рассылку) CRUD
     """
-    email = models.EmailField(verbose_name="почта", unique=True)
+    email = models.EmailField(verbose_name="почта")
     fio = models.CharField(verbose_name="ФИО", max_length=150)
     comment = models.TextField(verbose_name="комментарий", **NULLABLE)
+    owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
 
     class Meta:
         verbose_name = "клиент"
@@ -23,6 +25,7 @@ class Message(models.Model):
     """
     subject = models.CharField(max_length=50,verbose_name='тема письма')
     body = models.TextField(verbose_name='тело письма')
+    owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
 
 
     class Meta:
@@ -36,40 +39,51 @@ class Newsletter(models.Model):
     """
     настройки рассылки
     """
+    name = models.CharField(max_length=50, verbose_name='Название рассылки', **NULLABLE)
     start_time = models.DateTimeField(verbose_name='время начала отправки рассылки')
     end_time = models.DateTimeField(verbose_name='время окончания отправки рассылки')
+    time_last_shipment = models.DateTimeField(verbose_name='время последней отправки сообщения', blank=True, null=True)
 
-    daily = 'раз в день'
-    weekly = 'раз в неделю'
-    monthly = 'раз в месяц'
     Periodicity = [
-        (daily,'раз в день'),(weekly,'раз в неделю'),(monthly,'раз в месяц')
+        ('daily','раз в день'),
+        ('weekly','раз в неделю'),
+        ('monthly','раз в месяц')
     ]
     periodicity = models.CharField(max_length=20,verbose_name='периодичность',choices=Periodicity)
 
-    finished = 'завершена'
-    created = 'создана'
-    launched = 'запущена'
     Status = [
-        (finished, 'завершена'), (created, 'создана'), (launched, 'запущена')
+        ('finished', 'завершена'),
+        ('created', 'создана'),
+        ('launched', 'запущена')
     ]
-    status = models.CharField(max_length=20,verbose_name='статус рассылки',choices=Status,default=created)
+    status = models.CharField(max_length=20,verbose_name='статус рассылки',choices=Status)
 
     client = models.ManyToManyField(Client,verbose_name='клиент')
     message = models.ForeignKey(Message,verbose_name='сообщение',on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
+    is_active = models.BooleanField(default=True, verbose_name='Включена/отключена')
 
 
     class Meta:
         verbose_name = "рассылка"
         verbose_name_plural = "рассылки"
+        permissions = [
+            ("сan_view_any_mailing_lists", "может просматривать любые рассылки"),
+            ("can_disable_mailing_lists", "может отключить рассылки")
+        ]
+
     def __str__(self):
-        return f'Время: {self.start_time} - {self.end_time}, статус рассылки: {self.status}, периодичность рассылки: {self.periodicity}'
+        return f'Рассылка {self.name}, время: {self.start_time} - {self.end_time}'
 
 
 class Logs(models.Model):
+    name = models.CharField(max_length=50, verbose_name='Название рассылки', default="Рассылка")
+    mailing = models.ForeignKey(Newsletter, related_name='attempts', on_delete=models.CASCADE, **NULLABLE)
     attempt_time = models.DateTimeField(verbose_name='дата и время последней попытки')
-    attempt = models.BooleanField(verbose_name='статус попытки')
-    response = models.CharField(max_length=100,verbose_name='ответ почтового сервера',**NULLABLE)
+    attempt = models.CharField(max_length=50, verbose_name='статус попытки')
+    comments = models.TextField(max_length=50, verbose_name='Комментарии', **NULLABLE)
+    response = models.TextField (verbose_name='ответ почтового сервера', **NULLABLE)
+    owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
 
     class Meta:
         verbose_name = "лог попыток отправки письма"
@@ -77,13 +91,3 @@ class Logs(models.Model):
 
     def __str__(self):
         return f'{self.attempt_time} - {self.attempt}'
-
-
-
-
-
-
-
-
-
-

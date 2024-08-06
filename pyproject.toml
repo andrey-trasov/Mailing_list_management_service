@@ -9,6 +9,9 @@ readme = "README.md"
 python = "^3.12"
 django = "^5.0.6"
 psycopg2-binary = "^2.9.9"
+apscheduler = "^3.10.4"
+django-apscheduler = "^0.6.2"
+python-dotenv = "^1.0.1"
 
 
 [build-system]

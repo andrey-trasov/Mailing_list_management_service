@@ -1,6 +1,7 @@
 {% extends 'mailings/base.html' %}
 {% block content %}
 
+<a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'mailings:newsletter_create' %}">Создать рассылку</a>
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
@@ -18,6 +19,7 @@
         <div class="col">
           <div class="card shadow-sm">
             <div class="card-body">
+                <h5 class="card-title">{{ newsletter.name }}</h5>
                 <h5 class="card-title">{{ newsletter.message }}</h5>
                 <h5 class="card-title">{{ newsletter.status }}</h5>
                 <h5 class="card-title">{{ newsletter.periodicity }}</h5>
@@ -26,8 +28,30 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                     <a class="btn btn-sm btn-outline-secondary" href="{% url 'mailings:newsletter_detail' newsletter.pk %}" role="button">Просмотр</a>
+                    {% if user == newsletter.owner %}
                     <a class="btn btn-sm btn-outline-secondary" href="{% url 'mailings:newsletter_update' newsletter.pk %}" role="button">Редактировать</a>
+                    {% endif %}
+                    {% if user == newsletter.owner %}
                     <a class="btn btn-sm btn-outline-secondary" href="{% url 'mailings:newsletter_delete' newsletter.pk %}" role="button">Удалить</a>
+                    {% endif %}
+
+
+                    {% if perms.mailings.can_disable_mailing_lists %}
+                    <form method="POST">
+                    {% csrf_token %}
+                    {% if newsletter.is_active %}
+                    <button type="submit" class="btn btn-mb btn-outline-danger" name="status" value="{{ newsletter.id }}">Отключить рассылку</button>
+                    {% else %}
+                    <button type="submit" class="btn btn-mb btn-outline-success" name="status" value="{{ newsletter.id }}">Включить рассылку</button>
+                    {% endif %}
+                    </form>
+                    {% endif %}
+
+
+
+
+
+
                 </div>
               </div>
             </div>

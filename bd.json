@@ -1,830 +1,1802 @@
 [
-  {
+{
     "model": "admin.logentry",
     "pk": 1,
     "fields": {
-      "action_time": "2024-06-27T13:48:32.368Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "1",
-      "object_repr": "aa ss dd (a1@gmail.com)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+        "action_time": "2024-08-06T16:46:09.814Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "moderator",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 2,
     "fields": {
-      "action_time": "2024-06-27T13:48:42.684Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "2",
-      "object_repr": "aa ss dd (a2@gmail.com)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+        "action_time": "2024-08-06T16:46:26.642Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "6",
+        "object_repr": "py.te.1@mail.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 3,
     "fields": {
-      "action_time": "2024-06-27T13:48:49.580Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "3",
-      "object_repr": "aa ss dd (a3@gmail.com)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+        "action_time": "2024-08-06T17:19:22.828Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "py.te.3@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 4,
     "fields": {
-      "action_time": "2024-06-27T13:48:52.588Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "3",
-      "object_repr": "aa ss dd (a3@gmail.com)",
-      "action_flag": 2,
-      "change_message": "[]"
+        "action_time": "2024-08-06T21:38:16.544Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "Как получит информацию о рассылках",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 5,
     "fields": {
-      "action_time": "2024-06-27T13:49:04.715Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "1",
-      "object_repr": "33qr3rwr",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+        "action_time": "2024-08-06T21:38:16.555Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "Как правильно создать расылкe?",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 6,
     "fields": {
-      "action_time": "2024-06-27T13:49:11.030Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "2",
-      "object_repr": "c3rc2rc2",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+        "action_time": "2024-08-06T21:38:16.557Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Как правильно создать новые сообщения?",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 7,
     "fields": {
-      "action_time": "2024-06-27T13:50:00.252Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "4",
-      "object_repr": "3t3t (a4@gmail.com)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+        "action_time": "2024-08-06T21:38:16.559Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Как правильно создать новых клиентов?",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 8,
     "fields": {
-      "action_time": "2024-06-27T13:50:38.009Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "1",
-      "object_repr": "Время: 2024-06-27 13:49:19+00:00 - 2024-06-28 13:49:20+00:00, статус рассылки: создана, периодичность рассылки: раз в день",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+        "action_time": "2024-08-06T21:46:22.729Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "wewrtyuiop",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 9,
     "fields": {
-      "action_time": "2024-06-27T13:50:45.273Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "1",
-      "object_repr": "Время: 2024-06-27 13:49:19+00:00 - 2024-06-28 13:49:20+00:00, статус рассылки: создана, периодичность рассылки: раз в день",
-      "action_flag": 3,
-      "change_message": ""
+        "action_time": "2024-08-06T21:46:22.733Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "mail2 test",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 10,
     "fields": {
-      "action_time": "2024-06-30T11:04:54.098Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "3",
-      "object_repr": "У нас появился новый товар",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+        "action_time": "2024-08-06T21:46:39.719Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "18",
+        "object_repr": "Рассылка 345t, время: 2024-08-06 16:29:00+00:00 - 2024-08-06 16:29:00+00:00",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 11,
     "fields": {
-      "action_time": "2024-07-18T08:31:35.147Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "6",
-      "object_repr": "Тарасов Андрей Алексеевич (a4@gmail.com)",
-      "action_flag": 3,
-      "change_message": ""
+        "action_time": "2024-08-06T21:46:39.722Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "17",
+        "object_repr": "Рассылка 23456, время: 2024-06-27 12:26:08+00:00 - 2024-08-06 12:26:10+00:00",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 12,
     "fields": {
-      "action_time": "2024-07-18T08:31:35.160Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "3",
-      "object_repr": "aa ss dd (a3@gmail.com)",
-      "action_flag": 3,
-      "change_message": ""
+        "action_time": "2024-08-06T21:46:39.723Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "14",
+        "object_repr": "Рассылка Рассылка с яндексом, время: 2024-07-15 16:22:34+00:00 - 2024-08-18 16:22:34+00:00",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 13,
     "fields": {
-      "action_time": "2024-07-18T08:31:35.161Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "2",
-      "object_repr": "aa ss dd (a2@gmail.com)",
-      "action_flag": 3,
-      "change_message": ""
+        "action_time": "2024-08-06T21:46:39.724Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "13",
+        "object_repr": "Рассылка Нормальная рассылка, время: 2024-07-03 16:17:48+00:00 - 2024-08-21 16:17:50+00:00",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 14,
     "fields": {
-      "action_time": "2024-07-18T08:31:35.162Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "1",
-      "object_repr": "aa ss dd (a1@gmail.com)",
-      "action_flag": 3,
-      "change_message": ""
+        "action_time": "2024-08-06T21:46:39.725Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "12",
+        "object_repr": "Рассылка Завершеная, время: 2024-07-01 16:16:18+00:00 - 2024-07-31 16:16:14+00:00",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 15,
     "fields": {
-      "action_time": "2024-07-18T08:31:59.196Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "3",
-      "object_repr": "У нас появился новый товар",
-      "action_flag": 3,
-      "change_message": ""
+        "action_time": "2024-08-06T21:46:39.726Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "11",
+        "object_repr": "Рассылка Рассылка с ошибкой, время: 2024-07-03 16:15:10+00:00 - 2024-08-06 16:15:20+00:00",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 16,
     "fields": {
-      "action_time": "2024-07-18T08:31:59.198Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "2",
-      "object_repr": "c3rc2rc2",
-      "action_flag": 3,
-      "change_message": ""
+        "action_time": "2024-08-06T21:47:04.147Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "21",
+        "object_repr": "tests.python200@gmail.com (tests.python200@gmail.com)",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 17,
     "fields": {
-      "action_time": "2024-07-18T16:22:06.511Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "2",
-      "object_repr": "Время: 2024-06-27 13:49:19+00:00 - 2024-06-28 13:49:20+00:00, статус рассылки: создана, периодичность рассылки: раз в день",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+        "action_time": "2024-08-06T21:47:04.150Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "18",
+        "object_repr": "werth (wqert@mail.ru)",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 18,
     "fields": {
-      "action_time": "2024-07-18T16:22:27.646Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "3",
-      "object_repr": "Время: 2024-07-16 06:00:00+00:00 - 2024-07-31 12:00:00+00:00, статус рассылки: создана, периодичность рассылки: раз в неделю",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+        "action_time": "2024-08-06T21:47:04.152Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "17",
+        "object_repr": "mail2 (test@mail.ruuu)",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 19,
     "fields": {
-      "action_time": "2024-07-18T16:22:46.711Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "4",
-      "object_repr": "Время: 2024-07-15 16:22:34+00:00 - 2024-07-03 16:22:39+00:00, статус рассылки: создана, периодичность рассылки: раз в месяц",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+        "action_time": "2024-08-06T21:47:04.153Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "16",
+        "object_repr": "mail2 (test@mail.ru)",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
     "model": "admin.logentry",
     "pk": 20,
     "fields": {
-      "action_time": "2024-07-18T16:25:11.014Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "4",
-      "object_repr": "Время: 2024-07-15 16:22:34+00:00 - 2024-07-03 16:22:39+00:00, статус рассылки: создана, периодичность рассылки: раз в месяц",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043b\\u0438\\u0435\\u043d\\u0442\"]}}]"
+        "action_time": "2024-08-06T21:47:04.155Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "15",
+        "object_repr": "mail2 (programming.miirt@gmail.com)",
+        "action_flag": 3,
+        "change_message": ""
     }
-  },
-  {
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-08-06T21:47:04.156Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "12",
+        "object_repr": "aa ss dd (tests.python200@gmail.com)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-08-06T21:47:04.157Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "11",
+        "object_repr": "яндекс (tests.python100@yandex.ru)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-08-06T21:47:04.159Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "10",
+        "object_repr": "test (test@mail.ruutfuf)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-08-06T21:47:04.160Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "8",
+        "object_repr": "Иванов ИвАн Иванович (py.te.1@mail.ru)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-08-06T21:47:04.161Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "7",
+        "object_repr": "Тарасов Андрей Алексеевич (py.te.2@mail.ru)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-08-06T21:48:16.886Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "moderator",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-08-06T21:48:44.341Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "content-manager",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-08-06T21:48:57.218Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "6",
+        "object_repr": "py.te.1@mail.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-08-06T21:53:51.893Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "Гороскоп",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u043b\\u0430\\u0434\\u0435\\u043b\\u0435\\u0446\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-08-06T21:53:55.603Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Скидки",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u043b\\u0430\\u0434\\u0435\\u043b\\u0435\\u0446\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-08-06T21:54:01.318Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "У нас появился новый товар",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u043b\\u0430\\u0434\\u0435\\u043b\\u0435\\u0446\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-08-06T21:54:20.048Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "Гороскоп",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u043b\\u0430\\u0434\\u0435\\u043b\\u0435\\u0446\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-08-06T22:19:17.384Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "19",
+        "object_repr": "Рассылка Гороскоп, время: 2024-08-07 00:53:00+00:00 - 2024-09-17 00:56:00+00:00",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0440\\u0435\\u043c\\u044f \\u043e\\u043a\\u043e\\u043d\\u0447\\u0430\\u043d\\u0438\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-08-06T22:19:52.671Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "20",
+        "object_repr": "Рассылка Скидки, время: 2024-08-07 00:57:00+00:00 - 2024-08-08 00:57:00+00:00",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0441\\u043e\\u043e\\u0431\\u0449\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-08-06T22:20:05.211Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "21",
+        "object_repr": "Рассылка Поступление товара, время: 2024-08-06 00:59:00+00:00 - 2025-08-07 00:59:00+00:00",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-08-06T22:21:21.158Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "19",
+        "object_repr": "Рассылка Гороскоп, время: 2024-08-06 00:53:00+00:00 - 2024-09-17 00:56:00+00:00",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0440\\u0435\\u043c\\u044f \\u043d\\u0430\\u0447\\u0430\\u043b\\u0430 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-08-06T22:21:45.347Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "46",
+        "object_repr": "2024-08-06 22:02:26.762415+00:00 - успешно",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
     "model": "auth.permission",
     "pk": 1,
     "fields": {
-      "name": "Can add log entry",
-      "content_type": 1,
-      "codename": "add_logentry"
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 2,
     "fields": {
-      "name": "Can change log entry",
-      "content_type": 1,
-      "codename": "change_logentry"
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 3,
     "fields": {
-      "name": "Can delete log entry",
-      "content_type": 1,
-      "codename": "delete_logentry"
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 4,
     "fields": {
-      "name": "Can view log entry",
-      "content_type": 1,
-      "codename": "view_logentry"
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 5,
     "fields": {
-      "name": "Can add permission",
-      "content_type": 2,
-      "codename": "add_permission"
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 6,
     "fields": {
-      "name": "Can change permission",
-      "content_type": 2,
-      "codename": "change_permission"
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 7,
     "fields": {
-      "name": "Can delete permission",
-      "content_type": 2,
-      "codename": "delete_permission"
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 8,
     "fields": {
-      "name": "Can view permission",
-      "content_type": 2,
-      "codename": "view_permission"
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 9,
     "fields": {
-      "name": "Can add group",
-      "content_type": 3,
-      "codename": "add_group"
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 10,
     "fields": {
-      "name": "Can change group",
-      "content_type": 3,
-      "codename": "change_group"
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 11,
     "fields": {
-      "name": "Can delete group",
-      "content_type": 3,
-      "codename": "delete_group"
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 12,
     "fields": {
-      "name": "Can view group",
-      "content_type": 3,
-      "codename": "view_group"
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 13,
     "fields": {
-      "name": "Can add user",
-      "content_type": 4,
-      "codename": "add_user"
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 14,
     "fields": {
-      "name": "Can change user",
-      "content_type": 4,
-      "codename": "change_user"
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 15,
     "fields": {
-      "name": "Can delete user",
-      "content_type": 4,
-      "codename": "delete_user"
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 16,
     "fields": {
-      "name": "Can view user",
-      "content_type": 4,
-      "codename": "view_user"
+        "name": "Can view content type",
+        "content_type": 4,
+        "codename": "view_contenttype"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 17,
     "fields": {
-      "name": "Can add content type",
-      "content_type": 5,
-      "codename": "add_contenttype"
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 18,
     "fields": {
-      "name": "Can change content type",
-      "content_type": 5,
-      "codename": "change_contenttype"
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 19,
     "fields": {
-      "name": "Can delete content type",
-      "content_type": 5,
-      "codename": "delete_contenttype"
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 20,
     "fields": {
-      "name": "Can view content type",
-      "content_type": 5,
-      "codename": "view_contenttype"
+        "name": "Can view session",
+        "content_type": 5,
+        "codename": "view_session"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 21,
     "fields": {
-      "name": "Can add session",
-      "content_type": 6,
-      "codename": "add_session"
+        "name": "Can add клиент",
+        "content_type": 6,
+        "codename": "add_client"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 22,
     "fields": {
-      "name": "Can change session",
-      "content_type": 6,
-      "codename": "change_session"
+        "name": "Can change клиент",
+        "content_type": 6,
+        "codename": "change_client"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 23,
     "fields": {
-      "name": "Can delete session",
-      "content_type": 6,
-      "codename": "delete_session"
+        "name": "Can delete клиент",
+        "content_type": 6,
+        "codename": "delete_client"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 24,
     "fields": {
-      "name": "Can view session",
-      "content_type": 6,
-      "codename": "view_session"
+        "name": "Can view клиент",
+        "content_type": 6,
+        "codename": "view_client"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 25,
     "fields": {
-      "name": "Can add клиент",
-      "content_type": 7,
-      "codename": "add_client"
+        "name": "Can add лог попыток отправки письма",
+        "content_type": 7,
+        "codename": "add_logs"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 26,
     "fields": {
-      "name": "Can change клиент",
-      "content_type": 7,
-      "codename": "change_client"
+        "name": "Can change лог попыток отправки письма",
+        "content_type": 7,
+        "codename": "change_logs"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 27,
     "fields": {
-      "name": "Can delete клиент",
-      "content_type": 7,
-      "codename": "delete_client"
+        "name": "Can delete лог попыток отправки письма",
+        "content_type": 7,
+        "codename": "delete_logs"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 28,
     "fields": {
-      "name": "Can view клиент",
-      "content_type": 7,
-      "codename": "view_client"
+        "name": "Can view лог попыток отправки письма",
+        "content_type": 7,
+        "codename": "view_logs"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 29,
     "fields": {
-      "name": "Can add лог попыток отправки письма",
-      "content_type": 8,
-      "codename": "add_logs"
+        "name": "Can add Сообщение",
+        "content_type": 8,
+        "codename": "add_message"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 30,
     "fields": {
-      "name": "Can change лог попыток отправки письма",
-      "content_type": 8,
-      "codename": "change_logs"
+        "name": "Can change Сообщение",
+        "content_type": 8,
+        "codename": "change_message"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 31,
     "fields": {
-      "name": "Can delete лог попыток отправки письма",
-      "content_type": 8,
-      "codename": "delete_logs"
+        "name": "Can delete Сообщение",
+        "content_type": 8,
+        "codename": "delete_message"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 32,
     "fields": {
-      "name": "Can view лог попыток отправки письма",
-      "content_type": 8,
-      "codename": "view_logs"
+        "name": "Can view Сообщение",
+        "content_type": 8,
+        "codename": "view_message"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 33,
     "fields": {
-      "name": "Can add Сообщение",
-      "content_type": 9,
-      "codename": "add_message"
+        "name": "Can add рассылка",
+        "content_type": 9,
+        "codename": "add_newsletter"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 34,
     "fields": {
-      "name": "Can change Сообщение",
-      "content_type": 9,
-      "codename": "change_message"
+        "name": "Can change рассылка",
+        "content_type": 9,
+        "codename": "change_newsletter"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 35,
     "fields": {
-      "name": "Can delete Сообщение",
-      "content_type": 9,
-      "codename": "delete_message"
+        "name": "Can delete рассылка",
+        "content_type": 9,
+        "codename": "delete_newsletter"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 36,
     "fields": {
-      "name": "Can view Сообщение",
-      "content_type": 9,
-      "codename": "view_message"
+        "name": "Can view рассылка",
+        "content_type": 9,
+        "codename": "view_newsletter"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 37,
     "fields": {
-      "name": "Can add рассылка",
-      "content_type": 10,
-      "codename": "add_newsletter"
+        "name": "может просматривать любые рассылки",
+        "content_type": 9,
+        "codename": "сan_view_any_mailing_lists"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 38,
     "fields": {
-      "name": "Can change рассылка",
-      "content_type": 10,
-      "codename": "change_newsletter"
+        "name": "может отключить рассылки",
+        "content_type": 9,
+        "codename": "can_disable_mailing_lists"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 39,
     "fields": {
-      "name": "Can delete рассылка",
-      "content_type": 10,
-      "codename": "delete_newsletter"
+        "name": "Can add django job",
+        "content_type": 10,
+        "codename": "add_djangojob"
     }
-  },
-  {
+},
+{
     "model": "auth.permission",
     "pk": 40,
     "fields": {
-      "name": "Can view рассылка",
-      "content_type": 10,
-      "codename": "view_newsletter"
+        "name": "Can change django job",
+        "content_type": 10,
+        "codename": "change_djangojob"
     }
-  },
-  {
-    "model": "auth.user",
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can delete django job",
+        "content_type": 10,
+        "codename": "delete_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can view django job",
+        "content_type": 10,
+        "codename": "view_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can add django job execution",
+        "content_type": 11,
+        "codename": "add_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can change django job execution",
+        "content_type": 11,
+        "codename": "change_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can delete django job execution",
+        "content_type": 11,
+        "codename": "delete_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can view django job execution",
+        "content_type": 11,
+        "codename": "view_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can add пользователь",
+        "content_type": 12,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can change пользователь",
+        "content_type": 12,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can delete пользователь",
+        "content_type": 12,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can view пользователь",
+        "content_type": 12,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "может просматривать список пользователей сервиса",
+        "content_type": 12,
+        "codename": "can_view_the_list_of_users_of_the_service"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "может блокировать пользователей сервиса",
+        "content_type": 12,
+        "codename": "it_can_block_users_of_the_service"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add Блог",
+        "content_type": 13,
+        "codename": "add_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change Блог",
+        "content_type": 13,
+        "codename": "change_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete Блог",
+        "content_type": 13,
+        "codename": "delete_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view Блог",
+        "content_type": 13,
+        "codename": "view_blog"
+    }
+},
+{
+    "model": "auth.group",
     "pk": 1,
     "fields": {
-      "password": "pbkdf2_sha256$600000$8hRAjmdIaMh3TXx3VmChHZ$7tJkAchEd1+qN56iVWB4jD9xkFkBN3yhsuLTpDPULn4=",
-      "last_login": "2024-07-18T08:31:11.500Z",
-      "is_superuser": true,
-      "username": "admin",
-      "first_name": "",
-      "last_name": "",
-      "email": "",
-      "is_staff": true,
-      "is_active": true,
-      "date_joined": "2024-06-27T13:46:45.319Z",
-      "groups": [],
-      "user_permissions": []
+        "name": "moderator",
+        "permissions": [
+            38,
+            37,
+            51,
+            52
+        ]
     }
-  },
-  {
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "content-manager",
+        "permissions": [
+            53,
+            54,
+            55,
+            56
+        ]
+    }
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 1,
     "fields": {
-      "app_label": "admin",
-      "model": "logentry"
+        "app_label": "admin",
+        "model": "logentry"
     }
-  },
-  {
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 2,
     "fields": {
-      "app_label": "auth",
-      "model": "permission"
+        "app_label": "auth",
+        "model": "permission"
     }
-  },
-  {
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 3,
     "fields": {
-      "app_label": "auth",
-      "model": "group"
+        "app_label": "auth",
+        "model": "group"
     }
-  },
-  {
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 4,
     "fields": {
-      "app_label": "auth",
-      "model": "user"
+        "app_label": "contenttypes",
+        "model": "contenttype"
     }
-  },
-  {
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 5,
     "fields": {
-      "app_label": "contenttypes",
-      "model": "contenttype"
+        "app_label": "sessions",
+        "model": "session"
     }
-  },
-  {
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 6,
     "fields": {
-      "app_label": "sessions",
-      "model": "session"
+        "app_label": "mailings",
+        "model": "client"
     }
-  },
-  {
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 7,
     "fields": {
-      "app_label": "mailings",
-      "model": "client"
+        "app_label": "mailings",
+        "model": "logs"
     }
-  },
-  {
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 8,
     "fields": {
-      "app_label": "mailings",
-      "model": "logs"
+        "app_label": "mailings",
+        "model": "message"
     }
-  },
-  {
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 9,
     "fields": {
-      "app_label": "mailings",
-      "model": "message"
+        "app_label": "mailings",
+        "model": "newsletter"
     }
-  },
-  {
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 10,
     "fields": {
-      "app_label": "mailings",
-      "model": "newsletter"
+        "app_label": "django_apscheduler",
+        "model": "djangojob"
     }
-  },
-  {
-    "model": "sessions.session",
-    "pk": "93nizvj5yngujw31m624evd09z11ji70",
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
     "fields": {
-      "session_data": ".eJxVjDsOwjAQRO_iGlnZyNgbSnrOYO0vJIBsKZ8KcXcSKQVUI817M2-XaV2GvM425VHdxYE7_XZM8rSyA31QuVcvtSzTyH5X_EFnf6tqr-vh_h0MNA_bupfYYJQtkODcYwvCzILShdgkg5TMDBsNBF1QYsAkXUwKLStzYPf5AgBJOMY:1sMpSv:4vhvS4hlFrz2keMpyhmPNaAVjPQs-R3xaDD7Tz__Big",
-      "expire_date": "2024-07-11T13:47:09.216Z"
+        "app_label": "django_apscheduler",
+        "model": "djangojobexecution"
     }
-  },
-  {
-    "model": "sessions.session",
-    "pk": "9l65jqi80cy603b9j3zlwsa9lgmxov32",
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
     "fields": {
-      "session_data": ".eJxVjDsOwjAQRO_iGlnZyNgbSnrOYO0vJIBsKZ8KcXcSKQVUI817M2-XaV2GvM425VHdxYE7_XZM8rSyA31QuVcvtSzTyH5X_EFnf6tqr-vh_h0MNA_bupfYYJQtkODcYwvCzILShdgkg5TMDBsNBF1QYsAkXUwKLStzYPf5AgBJOMY:1sMpSv:4vhvS4hlFrz2keMpyhmPNaAVjPQs-R3xaDD7Tz__Big",
-      "expire_date": "2024-07-11T13:47:09.352Z"
+        "app_label": "user",
+        "model": "user"
     }
-  },
-  {
-    "model": "sessions.session",
-    "pk": "qd9fav3p9f7wvrprr69no0rqlkympf8d",
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
     "fields": {
-      "session_data": ".eJxVjDsOwjAQRO_iGlnZyNgbSnrOYO0vJIBsKZ8KcXcSKQVUI817M2-XaV2GvM425VHdxYE7_XZM8rSyA31QuVcvtSzTyH5X_EFnf6tqr-vh_h0MNA_bupfYYJQtkODcYwvCzILShdgkg5TMDBsNBF1QYsAkXUwKLStzYPf5AgBJOMY:1sMpSv:4vhvS4hlFrz2keMpyhmPNaAVjPQs-R3xaDD7Tz__Big",
-      "expire_date": "2024-07-11T13:47:09.274Z"
+        "app_label": "blog",
+        "model": "blog"
     }
-  },
-  {
+},
+{
     "model": "sessions.session",
-    "pk": "x0o6vad0ayv2vaxhnyfp0afha9x2e5bo",
+    "pk": "86b2c1lrqwhprddhsiqjxa8eirzc942o",
     "fields": {
-      "session_data": ".eJxVjMsOwiAQRf-FtSEwpTxcuvcbyAwMUjU0Ke3K-O_apAvd3nPOfYmI21rj1nmJUxZnocXpdyNMD247yHdst1mmua3LRHJX5EG7vM6Zn5fD_Tuo2Ou3psCsVcZgfHK6jACeDUBRA3DwDtNoIDgLXqswkEYFithqS8b4ojCI9wfKyDbc:1sUMXf:LV3qv_q36rG69WwvkROX9CyuLHwlbV4HDITP3jAD33Y",
-      "expire_date": "2024-08-01T08:31:11.501Z"
+        "session_data": ".eJxVjDsOwjAQBe_iGlne-E9JzxmstXeDA8iR4qRC3B0ipYD2zcx7iYTbWtPWeUkTibMAJU6_Y8by4LYTumO7zbLMbV2mLHdFHrTL60z8vBzu30HFXr81Q9aIXsOoFZuYfSYHoTA7O4ALrEOkGKKNyhARAkeLTINW3tNI3oj3Bw3JOEc:1sbSaV:IGCULKi1DdQaOa-asOS2JGqmdg_qCdJyiZHJw6f_x3E",
+        "expire_date": "2024-08-20T22:23:27.994Z"
     }
-  },
-  {
+},
+{
+    "model": "sessions.session",
+    "pk": "lqg01gn2759j5u42eot7am33rq7cgy97",
+    "fields": {
+        "session_data": ".eJxVjM0OwiAQhN-FsyFFlh89eu8zkGVZpGpoUtqT8d2lSQ96m5lvZt4i4LaWsDVewpTEVVhx-s0i0pPrDtID632WNNd1maLcK_KgTY5z4tft6P4dFGylr7MGIO3YpmgUeeBzVx4cm4sbvNVE3L3KGVE5HjhZ0OzBM6MxFJX4fAH2ODim:1sbSaA:FYlodz6ppsul-QJZEaRB9VdDS0mI6HZzEkfr0tber5Y",
+        "expire_date": "2024-08-20T22:23:06.623Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "svk0cq25bzvijeyz4nu3syodmoyxq5qq",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEUGR4u3fcbyAxDpWogKe3K-O_apAvd3nPOfYmI21ri1vMSZxYXMYjT70aYHrnugO9Yb02mVtdlJrkr8qBdjo3z83q4fwcFe_nWKoFjVPkMKQAHMuwUW8w2WQhh8qQTaG1V8NPAxCZ7Rg8AAb0BdiTeH-5cOB4:1sbTah:FoL57eL3MNeMk7zyaI37rCOsBHBgODhs3stHZhhGX00",
+        "expire_date": "2024-08-20T23:27:43.664Z"
+    }
+},
+{
     "model": "mailings.client",
-    "pk": 7,
+    "pk": 22,
     "fields": {
-      "email": "p.te.1@yandex.ru",
-      "fio": "Тарасов Андрей Алексеевич",
-      "comment": "Хочу скидку на ваши товары!!!"
+        "email": "py.te.1@mail.ru",
+        "fio": "Тарасов Андрей Алексеевич",
+        "comment": "хочет скидку",
+        "owner": 8
     }
-  },
-  {
+},
+{
     "model": "mailings.client",
-    "pk": 8,
+    "pk": 23,
     "fields": {
-      "email": "py.te.1@mail.ru",
-      "fio": "Иванов ИвАн Иванович",
-      "comment": "Добрый день"
+        "email": "py.te.3@mail.ru",
+        "fio": "Иванов ИвАн Иванович",
+        "comment": "хочет скидку",
+        "owner": 8
     }
-  },
-  {
+},
+{
+    "model": "mailings.client",
+    "pk": 24,
+    "fields": {
+        "email": "tests.python100@yandex.ru",
+        "fio": "Иванов ИвАн Иванович",
+        "comment": "",
+        "owner": 8
+    }
+},
+{
+    "model": "mailings.client",
+    "pk": 25,
+    "fields": {
+        "email": "tests.python100@yandex.ruuuuuu",
+        "fio": "Иванов ИвАн Иванович",
+        "comment": "Почта с ошибкой",
+        "owner": 8
+    }
+},
+{
+    "model": "mailings.client",
+    "pk": 26,
+    "fields": {
+        "email": "py.te.2@mail.ru",
+        "fio": "Иванов ИвАн Иванович",
+        "comment": "",
+        "owner": 10
+    }
+},
+{
+    "model": "mailings.client",
+    "pk": 27,
+    "fields": {
+        "email": "tests.python100@yandex.ru",
+        "fio": "Иванов ИвАн Иванович",
+        "comment": "",
+        "owner": 10
+    }
+},
+{
+    "model": "mailings.client",
+    "pk": 28,
+    "fields": {
+        "email": "py.te.2@mail.rururu",
+        "fio": "Иванов ИвАн Иванович",
+        "comment": "почта с ошибкой",
+        "owner": 10
+    }
+},
+{
     "model": "mailings.message",
     "pk": 4,
     "fields": {
-      "subject": "У нас появился новый товар",
-      "body": "Хотим проинформировать вас о пополнении на нашем складе."
+        "subject": "У нас появился новый товар",
+        "body": "Хотим проинформировать вас о пополнении на нашем складе.",
+        "owner": 10
     }
-  },
-  {
+},
+{
     "model": "mailings.message",
     "pk": 5,
     "fields": {
-      "subject": "Скидки",
-      "body": "Ура!!! У нас появились скидки."
+        "subject": "Скидки",
+        "body": "Ура!!! У нас появились скидки.",
+        "owner": 8
     }
-  },
-  {
+},
+{
+    "model": "mailings.message",
+    "pk": 10,
+    "fields": {
+        "subject": "Гороскоп",
+        "body": "Купите годовую подписку на наш гороскоп и получайте ежедневные прогнозы на целый день",
+        "owner": 8
+    }
+},
+{
     "model": "mailings.newsletter",
+    "pk": 19,
+    "fields": {
+        "name": "Гороскоп",
+        "start_time": "2024-08-06T00:53:00Z",
+        "end_time": "2024-09-17T00:56:00Z",
+        "time_last_shipment": "2024-08-06T22:21:49.424Z",
+        "periodicity": "daily",
+        "status": "launched",
+        "message": 10,
+        "owner": 8,
+        "is_active": true,
+        "client": [
+            22,
+            23,
+            24,
+            25
+        ]
+    }
+},
+{
+    "model": "mailings.newsletter",
+    "pk": 20,
+    "fields": {
+        "name": "Скидки",
+        "start_time": "2024-08-07T00:57:00Z",
+        "end_time": "2024-08-08T00:57:00Z",
+        "time_last_shipment": "2024-08-06T22:20:18.862Z",
+        "periodicity": "weekly",
+        "status": "launched",
+        "message": 5,
+        "owner": 8,
+        "is_active": true,
+        "client": [
+            22,
+            23,
+            25
+        ]
+    }
+},
+{
+    "model": "mailings.newsletter",
+    "pk": 21,
+    "fields": {
+        "name": "Поступление товара",
+        "start_time": "2024-08-06T00:59:00Z",
+        "end_time": "2025-08-07T00:59:00Z",
+        "time_last_shipment": "2024-08-06T22:20:18.862Z",
+        "periodicity": "monthly",
+        "status": "launched",
+        "message": 4,
+        "owner": 10,
+        "is_active": true,
+        "client": [
+            26,
+            27,
+            28
+        ]
+    }
+},
+{
+    "model": "mailings.logs",
+    "pk": 47,
+    "fields": {
+        "name": "Скидки",
+        "mailing": 20,
+        "attempt_time": "2024-08-06T22:20:22.120Z",
+        "attempt": "успешно",
+        "comments": "Успешно доставлено 2 клиентам из 3",
+        "response": "{'tests.python100@yandex.ruuuuuu': (550, b'non-local recipient verification failed')}",
+        "owner": 8
+    }
+},
+{
+    "model": "mailings.logs",
+    "pk": 48,
+    "fields": {
+        "name": "Поступление товара",
+        "mailing": 21,
+        "attempt_time": "2024-08-06T22:20:24.559Z",
+        "attempt": "успешно",
+        "comments": "Успешно доставлено 2 клиентам из 3",
+        "response": "{'py.te.2@mail.rururu': (550, b'non-local recipient verification failed')}",
+        "owner": 10
+    }
+},
+{
+    "model": "mailings.logs",
+    "pk": 49,
+    "fields": {
+        "name": "Гороскоп",
+        "mailing": 19,
+        "attempt_time": "2024-08-06T22:21:53.046Z",
+        "attempt": "успешно",
+        "comments": "Успешно доставлено 3 клиентам из 4",
+        "response": "{'tests.python100@yandex.ruuuuuu': (550, b'non-local recipient verification failed')}",
+        "owner": 8
+    }
+},
+{
+    "model": "django_apscheduler.djangojob",
+    "pk": "check_mailings",
+    "fields": {
+        "next_run_time": "2024-08-06T22:16:44.421Z",
+        "job_state": "gAWVAQIAAAAAAAB9lCiMB3ZlcnNpb26USwGMAmlklIwOY2hlY2tfbWFpbGluZ3OUjARmdW5jlIwbbWFpbGluZ3MudXRpbHM6c2VuZF9tYWlsaW5nlIwHdHJpZ2dlcpSMHWFwc2NoZWR1bGVyLnRyaWdnZXJzLmludGVydmFslIwPSW50ZXJ2YWxUcmlnZ2VylJOUKYGUfZQoaAFLAowIdGltZXpvbmWUjAhidWlsdGluc5SMB2dldGF0dHKUk5SMCHpvbmVpbmZvlIwIWm9uZUluZm+Uk5SMCV91bnBpY2tsZZSGlFKUjA1FdXJvcGUvTW9zY293lEsBhpRSlIwKc3RhcnRfZGF0ZZSMCGRhdGV0aW1llIwIZGF0ZXRpbWWUk5RDCgfoCAcBECYGcB2UaBiGlFKUjAhlbmRfZGF0ZZROjAhpbnRlcnZhbJRoGowJdGltZWRlbHRhlJOUSwBLAUsAh5RSlIwGaml0dGVylE51YowIZXhlY3V0b3KUjAdkZWZhdWx0lIwEYXJnc5QpjAZrd2FyZ3OUfZSMBG5hbWWUjAxzZW5kX21haWxpbmeUjBJtaXNmaXJlX2dyYWNlX3RpbWWUSwGMCGNvYWxlc2NllIiMDW1heF9pbnN0YW5jZXOUSwqMDW5leHRfcnVuX3RpbWWUaBxDCgfoCAcBECwGcB2UaBiGlFKUdS4="
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 1,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:02:23.922Z",
+        "duration": "2.85",
+        "finished": "1722981746.77",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
     "pk": 2,
     "fields": {
-      "start_time": "2024-06-27T13:49:19Z",
-      "end_time": "2024-06-28T13:49:20Z",
-      "periodicity": "раз в день",
-      "status": "создана",
-      "message": 4,
-      "client": [
-        7,
-        8
-      ]
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:03:23.922Z",
+        "duration": "0.02",
+        "finished": "1722981803.94",
+        "exception": null,
+        "traceback": null
     }
-  },
-  {
-    "model": "mailings.newsletter",
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
     "pk": 3,
     "fields": {
-      "start_time": "2024-07-16T06:00:00Z",
-      "end_time": "2024-07-31T12:00:00Z",
-      "periodicity": "раз в неделю",
-      "status": "создана",
-      "message": 5,
-      "client": [
-        7,
-        8
-      ]
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:04:23.922Z",
+        "duration": "0.01",
+        "finished": "1722981863.93",
+        "exception": null,
+        "traceback": null
     }
-  },
-  {
-    "model": "mailings.newsletter",
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
     "pk": 4,
     "fields": {
-      "start_time": "2024-07-15T16:22:34Z",
-      "end_time": "2024-07-03T16:22:39Z",
-      "periodicity": "раз в месяц",
-      "status": "создана",
-      "message": 4,
-      "client": [
-        8
-      ]
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:06:40.574Z",
+        "duration": "0.06",
+        "finished": "1722982000.63",
+        "exception": null,
+        "traceback": null
     }
-  }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 5,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:06:41.574Z",
+        "duration": "0.02",
+        "finished": "1722982001.59",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 6,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:06:42.574Z",
+        "duration": "0.01",
+        "finished": "1722982002.58",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 7,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:06:43.574Z",
+        "duration": "0.01",
+        "finished": "1722982003.59",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 8,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:07:51.730Z",
+        "duration": "0.06",
+        "finished": "1722982071.79",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 9,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:07:52.730Z",
+        "duration": "0.02",
+        "finished": "1722982072.75",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 10,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:07:53.730Z",
+        "duration": "0.01",
+        "finished": "1722982073.74",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 11,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:12:28.305Z",
+        "duration": "0.06",
+        "finished": "1722982348.37",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 12,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:12:29.305Z",
+        "duration": "0.02",
+        "finished": "1722982349.33",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 13,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:12:30.305Z",
+        "duration": "0.02",
+        "finished": "1722982350.32",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 14,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:12:46.676Z",
+        "duration": "0.06",
+        "finished": "1722982366.73",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 15,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:12:47.676Z",
+        "duration": "0.02",
+        "finished": "1722982367.69",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 16,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:13:42.052Z",
+        "duration": "0.06",
+        "finished": "1722982422.11",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 17,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:14:08.466Z",
+        "duration": "0.05",
+        "finished": "1722982448.52",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 18,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:14:09.466Z",
+        "duration": "0.01",
+        "finished": "1722982449.48",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 19,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:16:16.063Z",
+        "duration": "0.05",
+        "finished": "1722982576.12",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 20,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:16:38.421Z",
+        "duration": "0.04",
+        "finished": "1722982598.47",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 21,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:16:39.421Z",
+        "duration": "0.01",
+        "finished": "1722982599.43",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 22,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:16:40.421Z",
+        "duration": "0.01",
+        "finished": "1722982600.43",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 23,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:16:41.421Z",
+        "duration": "0.03",
+        "finished": "1722982601.45",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 24,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:16:42.421Z",
+        "duration": "0.02",
+        "finished": "1722982602.44",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "django_apscheduler.djangojobexecution",
+    "pk": 25,
+    "fields": {
+        "job": "check_mailings",
+        "status": "Executed",
+        "run_time": "2024-08-06T22:16:43.421Z",
+        "duration": "0.02",
+        "finished": "1722982603.44",
+        "exception": null,
+        "traceback": null
+    }
+},
+{
+    "model": "user.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$RlP39vwx8MSTNS3yDQhyg3$UQjy7D6/NnDQcpnXo9Sw3p4Cv+wU6wvDAq4ptVrf5M0=",
+        "last_login": "2024-08-06T23:27:43.663Z",
+        "is_superuser": true,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-08-02T11:57:04.566Z",
+        "email": "admin@example.com",
+        "phone": null,
+        "token": null,
+        "avatar": "",
+        "country": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$vqfFlxspK9NdEZcjWsFCa5$yeLzLTDFPPgjB7P7qwJ4+9d4k4FMuQOPphHYMrnU6Tk=",
+        "last_login": "2024-08-06T22:23:06.621Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-08-02T13:14:57Z",
+        "email": "py.te.1@mail.ru",
+        "phone": "+79531884165",
+        "token": "e0e4901ae3b193c45619c91ab2084310",
+        "avatar": "users/avatars/картинка_для_превью_7wcD0Pe.jpg",
+        "country": "РФ",
+        "groups": [
+            1,
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$FHbTgKRtPV5oGSFQPXbLXi$6PUQND4diX9OgfZ5IEyFCDoHtqM50etu5oOSAiOQ6aY=",
+        "last_login": "2024-08-06T22:23:17.466Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-08-04T13:09:54Z",
+        "email": "py.te.2@mail.ru",
+        "phone": "89521884165",
+        "token": "df452ce97a07355ae4302d99292fdf69",
+        "avatar": "users/avatars/картинка_для_превью_f9cKQCz.jpg",
+        "country": "Россия",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.user",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$UsnPakvHwMzu685TFzMl8F$dJF3tiN1hwNkApXi/DKAnzaV6/hEo5T1K7GJQgMNxWM=",
+        "last_login": "2024-08-06T22:23:27.990Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-08-06T17:23:54.846Z",
+        "email": "py.te.3@mail.ru",
+        "phone": "+7(952)188-41-65",
+        "token": "f42a712b03cb4399ee0452a8c8426281",
+        "avatar": "users/avatars/картинка_для_превью.jpg",
+        "country": "Россия",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 1,
+    "fields": {
+        "title": "Как правильно создать новых клиентов?",
+        "text": "Инструкция по созданию новых клиентов в нашем сервисе:\r\n1)введите почту\r\n2)введите имя\r\n3)введите комментарий",
+        "image": "blog/Снимок_экрана_2024-08-05_150547.png",
+        "count_of_view": 2,
+        "published": "2024-08-05T12:50:43.332Z"
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 2,
+    "fields": {
+        "title": "Как правильно создать новые сообщения?",
+        "text": "Инструкция по созданию новых сообщений в нашем сервисе:\r\n1)введите тему письма\r\n2)введите тело письма",
+        "image": "blog/Снимок_экрана_2024-08-05_150552.png",
+        "count_of_view": 18,
+        "published": "2024-08-05T12:53:32.923Z"
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 3,
+    "fields": {
+        "title": "Как правильно создать расылкe?",
+        "text": "Инструкция по созданию новых рассылок в нашем сервисе:\r\n1)введите название рассылки\r\n2)введите время начала отправки рассылки\r\n3)введите время окончания отправки рассылки\r\n4)выберите периодичность\r\n5)выберите статус рассылки\r\n6)выберите сообщение\r\n7)выберите клиентов",
+        "image": "blog/Снимок_экрана_2024-08-05_150555.png",
+        "count_of_view": 6,
+        "published": "2024-08-05T12:57:14.879Z"
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 4,
+    "fields": {
+        "title": "Как получит информацию о рассылках",
+        "text": "В владке \"Статистика\" вы можете найти такие данные как \"Название\",  \"Рассылка\",  \"Дата\", \"Статус\",\t\"Комментарий\".\tо прошедших рассылках.",
+        "image": "blog/Снимок_экрана_2024-08-05_150602.png",
+        "count_of_view": 3,
+        "published": "2024-08-05T13:02:33.863Z"
+    }
+}
 ]

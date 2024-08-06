@@ -1,0 +1,35 @@
+{% extends 'mailings/base.html' %}
+{% block content %}
+{% load my_tags %}
+<div class="container">
+    <div class="row text-center">
+        <div class="col-10">
+            <div class="card mb-4 box-shadow">
+                <h1 class="my-0 font-weight-normal">{{object.title}}</h1>
+                <div class="card-body">
+                    <div class="card mb-4 box-shadow">
+                    <img src="{{ object.avatar | media_filter }}">
+                           </div>
+
+                    <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                          <h5> Email: {{ object.email }} </h5>
+                    </ul>
+
+                    <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                          <p> Телефон: {{ object.phone }} </p>
+                    </ul>
+
+                    <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                          <p> Страна: {{ object.country }} </p>
+                    </ul>
+
+<a class="p-2 btn btn-sm btn-outline-secondary" href="{% url 'user:user_update' user.pk %}" role="button">Редактировать</a>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+{% endblock %}

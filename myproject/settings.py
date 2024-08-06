@@ -1,10 +1,16 @@
+import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "django-insecure-ysrsj3+a@!tlfny9d8wucj2e=5+1jz#dz@%mwx36%t!w!m6z^q"
+SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = True
+DEBUG = os.getenv('DEBUG', False) == "True"
 
 ALLOWED_HOSTS = []
 
@@ -18,6 +24,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "mailings",
+    "django_apscheduler",
+    "user",
+    "blog",
 ]
 
 MIDDLEWARE = [
@@ -54,11 +63,11 @@ WSGI_APPLICATION = "myproject.wsgi.application"
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-       'NAME': 'email_distribution_service',
-       'USER':  'postgres',
-       'PASSWORD': '12345',
-       'HOST': '127.0.0.1',
-       'PORT': '5432'
+       'NAME': os.getenv('NAME'),
+       'USER':  os.getenv('USER'),
+       'PASSWORD': os.getenv('PASSWORD'),
+       'HOST': os.getenv('HOST'),
+       'PORT': os.getenv('PORT')
    }
 }
 
@@ -82,9 +91,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "ru-ru"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Europe/Moscow"
 
 USE_I18N = True
 
@@ -94,12 +103,29 @@ STATIC_URL = "static/"
 
 STATICFILES_DIRS = (BASE_DIR / 'static',)
 
-EMAIL_HOST = 'smtp.mail.ru'
-EMAIL_PORT = 2525
-EMAIL_HOST_USER = "py.ma.1@mail.ru"
-EMAIL_HOST_PASSWORD = "kc0uSNRYAXFdwEwqNapj"
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
+EMAIL_HOST = os.getenv('EMAIL_HOST')
+EMAIL_PORT = os.getenv('EMAIL_PORT')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS', False) == "True"
+EMAIL_USE_SSL = os.getenv('EMAIL_USE_SSL', False) == "True"
 
 SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+AUTH_USER_MODEL = 'user.User'
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+CACHE_ENABLED = True
+if CACHE_ENABLED:
+   CACHES = {
+       "default": {
+           "BACKEND": "django.core.cache.backends.redis.RedisCache",
+           "LOCATION": os.getenv('LOCATION'),
+       }
+   }
