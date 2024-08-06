@@ -35,8 +35,8 @@ class NewsletterForm(StyleFormMixin, ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['message'].queryset = Message.objects.filter(owner=self.instance)
-        self.fields['client'].queryset = Client.objects.filter(owner=self.instance)
+        self.fields['message'].queryset = Message.objects.filter(owner=self.instance.owner)
+        self.fields['client'].queryset = Client.objects.filter(owner=self.instance.owner)
 
 
 
@@ -45,28 +45,17 @@ class NewsletterForm(StyleFormMixin, ModelForm):
        fields = ["name", "start_time", "end_time", "periodicity", "status", "message", "client"]
        widgets = {
            'start_time': forms.DateTimeInput(
-               attrs={'class': 'form-control', 'type': 'datetime-local', 'default': 'datetime-local'}),
+               attrs={'class': 'form-control', 'type': 'datetime-local'}),
            'end_time': forms.DateTimeInput(
-               attrs={'class': 'form-control', 'type': 'datetime-local', 'default': 'datetime-local'}),
+               attrs={'class': 'form-control', 'type': 'datetime-local'}),
            'periodicity': forms.Select(attrs={'class': 'form-control'}),
            'message': forms.Select(attrs={'class': 'form-control'}),
-           # multiple select for many-to-many relation
            'client': forms.SelectMultiple(attrs={'class': 'form-control', 'multiple': True}),
        }
 
-
-
-
-# class ClientForm(StyleFormMixin, ClientCreateView):
-#
-#    class Meta:
-#        model = Client
-#        exclude = ('owner',)
 
 class NewsletterModeratorForm(StyleFormMixin, ModelForm):
    class Meta:
        model = Newsletter
        fields = ('status',)
 
-
-# class NewsletterForm(ModelForm):

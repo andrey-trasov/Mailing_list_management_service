@@ -115,10 +115,16 @@ class NewsletterCreateView(LoginRequiredMixin, CreateView):
     form_class = NewsletterForm   #111111111111111111111111111111111111111111111111111111111111111111111 form_class
     success_url = reverse_lazy('mailings:client_list')
 
-    def get_form_kwargs(self):################################ добавляем переменную
+    # def get_form_kwargs(self):################################ добавляем переменную
+    #     kwargs = super().get_form_kwargs()
+    #     kwargs['instance'] = self.request.user
+    #     return kwargs
+
+    def get_form_kwargs(self):
         kwargs = super().get_form_kwargs()
-        kwargs['instance'] = self.request.user
+        kwargs['instance'] = Newsletter(owner=self.request.user)
         return kwargs
+
 
     def form_valid(self, form):
         product = form.save(commit=False)
@@ -132,10 +138,10 @@ class NewsletterUpdateView(LoginRequiredMixin, UpdateView):
     # fields = ["name", "start_time", "end_time", "periodicity", "status", "message"]
     success_url = reverse_lazy('mailings:client_list')
 
-    def get_form_kwargs(self):################################ добавляем переменную
-        kwargs = super().get_form_kwargs()
-        kwargs['instance'] = self.request.user
-        return kwargs
+    # def get_form_kwargs(self):
+    #     kwargs = super().get_form_kwargs()
+    #     kwargs['instance'] = Newsletter(owner=self.request.user)
+    #     return kwargs
 
     def get_form_class(self):
         user = self.request.user  # получаем юзера
