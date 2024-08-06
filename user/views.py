@@ -5,7 +5,7 @@ from myproject.settings import EMAIL_HOST_USER
 
 
 from django.urls import reverse_lazy, reverse
-from django.views.generic import CreateView
+from django.views.generic import CreateView, ListView, UpdateView
 from user.forms import UserRegisterForm
 from user.models import User
 
@@ -39,3 +39,34 @@ def email_verification(request, token):
     user.save()  # сохраняем изменения в базу
     return redirect(reverse('user:login'))
 
+class UserListView(ListView):
+    model = User
+
+    def get_queryset(self, *args, **kwargs):
+        """
+        показывает только клиентов созданных пользователем
+        """
+        queryset = super().get_queryset(*args, **kwargs)
+        queryset = queryset.exclude(email="admin@example.com")
+        return queryset
+
+    def post(self, request, *args, **kwargs):
+        user = User.objects.filter(pk=request.POST.get('status')).first()
+        if user.is_active:
+            user.is_active = False
+        else:
+            user.is_active = True
+        user.save()
+        return redirect('user:user_list')
+
+
+class UserUpdateView(UpdateView):
+    model = User
+    fields = ['is_active', ]
+    success_url = reverse_lazy('users:list')
+
+    def get_form_class(self):
+        user = self.request.user
+        if user.has_perm('users.set_active'):
+            user.is_active = False
+            user.save()

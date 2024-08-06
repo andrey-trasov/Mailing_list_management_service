@@ -7,5 +7,4 @@ class MailingsConfig(AppConfig):
 
     # def ready(self):
     #      from mailings.management.commands.runapscheduler import Command
-    #      # sleep(2)
     #      Command.handle(self)

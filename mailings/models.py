@@ -7,7 +7,7 @@ class Client(models.Model):
     """
     клиенты (получают рассылку) CRUD
     """
-    email = models.EmailField(verbose_name="почта", unique=True)
+    email = models.EmailField(verbose_name="почта")
     fio = models.CharField(verbose_name="ФИО", max_length=150)
     comment = models.TextField(verbose_name="комментарий", **NULLABLE)
     owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
@@ -66,6 +66,11 @@ class Newsletter(models.Model):
     class Meta:
         verbose_name = "рассылка"
         verbose_name_plural = "рассылки"
+        permissions = [
+            ("сan_view_any_mailing_lists", "может просматривать любые рассылки"),
+            ("can_disable_mailing_lists", "может отключить рассылки")
+        ]
+
     def __str__(self):
         return f'Рассылка {self.name}, время: {self.start_time} - {self.end_time}'
 

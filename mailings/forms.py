@@ -33,9 +33,18 @@ class MessageForm(StyleFormMixin, ModelForm):
 
 class NewsletterForm(StyleFormMixin, ModelForm):
 
-   class Meta:
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['message'].queryset = Message.objects.filter(owner=self.instance)
+        self.fields['client'].queryset = Client.objects.filter(owner=self.instance)
+
+
+
+    class Meta:
        model = Newsletter
-       exclude = ('owner',)
+       fields = ["name", "start_time", "end_time", "periodicity", "status", "message", "client"]
+
+
 
 
 # class ClientForm(StyleFormMixin, ClientCreateView):
@@ -43,3 +52,11 @@ class NewsletterForm(StyleFormMixin, ModelForm):
 #    class Meta:
 #        model = Client
 #        exclude = ('owner',)
+
+class NewsletterModeratorForm(StyleFormMixin, ModelForm):
+   class Meta:
+       model = Newsletter
+       fields = ('status',)
+
+
+# class NewsletterForm(ModelForm):
