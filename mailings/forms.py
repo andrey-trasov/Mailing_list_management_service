@@ -1,5 +1,5 @@
 from django.forms import BooleanField, ModelForm
-
+from django import forms
 from mailings.models import Client, Message, Newsletter
 
 
@@ -43,6 +43,16 @@ class NewsletterForm(StyleFormMixin, ModelForm):
     class Meta:
        model = Newsletter
        fields = ["name", "start_time", "end_time", "periodicity", "status", "message", "client"]
+       widgets = {
+           'start_time': forms.DateTimeInput(
+               attrs={'class': 'form-control', 'type': 'datetime-local', 'default': 'datetime-local'}),
+           'end_time': forms.DateTimeInput(
+               attrs={'class': 'form-control', 'type': 'datetime-local', 'default': 'datetime-local'}),
+           'periodicity': forms.Select(attrs={'class': 'form-control'}),
+           'message': forms.Select(attrs={'class': 'form-control'}),
+           # multiple select for many-to-many relation
+           'client': forms.SelectMultiple(attrs={'class': 'form-control', 'multiple': True}),
+       }
 
 
 
