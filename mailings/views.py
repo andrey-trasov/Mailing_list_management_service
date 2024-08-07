@@ -7,10 +7,9 @@ from django.views.generic import ListView, CreateView, DetailView, UpdateView, D
 from blog.models import Blog
 from mailings.forms import ClientForm, MessageForm, NewsletterForm, NewsletterModeratorForm
 from mailings.models import Client, Message, Newsletter, Logs
-from user.models import User
 
 
-#Клиенты
+# Клиенты
 class ClientListView(ListView):
     model = Client
 
@@ -21,6 +20,7 @@ class ClientListView(ListView):
         queryset = super().get_queryset(*args, **kwargs)
         queryset = queryset.filter(owner=self.request.user)
         return queryset
+
 
 class ClientCreateView(LoginRequiredMixin, CreateView):
     model = Client
@@ -34,19 +34,23 @@ class ClientCreateView(LoginRequiredMixin, CreateView):
         product.save()
         return super().form_valid(form)
 
+
 class ClientUpdateView(LoginRequiredMixin, UpdateView):
     model = Client
     fields = ['email', 'fio', 'comment']
     success_url = reverse_lazy('mailings:client_list')
 
+
 class ClientDeleteView(LoginRequiredMixin, DeleteView):
     model = Client
     success_url = reverse_lazy('mailings:client_list')
 
+
 class ClientDetailView(DetailView):
     model = Client
 
-#Сообщения
+
+# Сообщения
 class MessageListView(ListView):
     model = Message
 
@@ -58,10 +62,11 @@ class MessageListView(ListView):
         queryset = queryset.filter(owner=self.request.user)
         return queryset
 
+
 class MessageCreateView(LoginRequiredMixin, CreateView):
     model = Message
     forms = MessageForm
-    fields = ['subject', 'body',]
+    fields = ['subject', 'body', ]
     success_url = reverse_lazy('mailings:message_list')
 
     def form_valid(self, form):
@@ -71,19 +76,23 @@ class MessageCreateView(LoginRequiredMixin, CreateView):
         product.save()
         return super().form_valid(form)
 
+
 class MessageUpdateView(LoginRequiredMixin, UpdateView):
     model = Message
     fields = ['subject', 'body']
     success_url = reverse_lazy('mailings:message_list')
 
+
 class MessageDeleteView(LoginRequiredMixin, DeleteView):
     model = Message
     success_url = reverse_lazy('mailings:message_list')
 
+
 class MessageDetailView(DetailView):
     model = Message
 
-#Рассылка
+
+# Рассылка
 
 class NewsletterListView(ListView):
     model = Newsletter
@@ -93,7 +102,7 @@ class NewsletterListView(ListView):
         показывает только рассылки созданные пользователем и админам
         """
         queryset = super().get_queryset(*args, **kwargs)
-        user = self.request.user    # получаем юзера
+        user = self.request.user  # получаем юзера
         if user.has_perm('mailings.сan_view_any_mailing_lists'):  # если имеет эти права
             return queryset  # возвращаем форму для модераторов
         queryset = queryset.filter(owner=user)
@@ -112,19 +121,13 @@ class NewsletterListView(ListView):
 
 class NewsletterCreateView(LoginRequiredMixin, CreateView):
     model = Newsletter
-    form_class = NewsletterForm   #111111111111111111111111111111111111111111111111111111111111111111111 form_class
+    form_class = NewsletterForm
     success_url = reverse_lazy('mailings:client_list')
-
-    # def get_form_kwargs(self):################################ добавляем переменную
-    #     kwargs = super().get_form_kwargs()
-    #     kwargs['instance'] = self.request.user
-    #     return kwargs
 
     def get_form_kwargs(self):
         kwargs = super().get_form_kwargs()
         kwargs['instance'] = Newsletter(owner=self.request.user)
         return kwargs
-
 
     def form_valid(self, form):
         product = form.save(commit=False)
@@ -133,15 +136,10 @@ class NewsletterCreateView(LoginRequiredMixin, CreateView):
         product.save()
         return super().form_valid(form)
 
+
 class NewsletterUpdateView(LoginRequiredMixin, UpdateView):
     model = Newsletter
-    # fields = ["name", "start_time", "end_time", "periodicity", "status", "message"]
     success_url = reverse_lazy('mailings:client_list')
-
-    # def get_form_kwargs(self):
-    #     kwargs = super().get_form_kwargs()
-    #     kwargs['instance'] = Newsletter(owner=self.request.user)
-    #     return kwargs
 
     def get_form_class(self):
         user = self.request.user  # получаем юзера
@@ -156,10 +154,12 @@ class NewsletterDeleteView(LoginRequiredMixin, DeleteView):
     model = Newsletter
     success_url = reverse_lazy('mailings:client_list')
 
+
 class NewsletterDetailView(DetailView):
     model = Newsletter
 
-#логи
+
+# логи
 class LogsListView(ListView):
     model = Logs
 
@@ -173,6 +173,7 @@ class LogsListView(ListView):
             return queryset  # возвращаем форму для модераторов
         queryset = queryset.filter(owner=user)
         return queryset
+
 
 class BlogListView(ListView):
     model = Blog

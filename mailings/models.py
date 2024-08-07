@@ -3,6 +3,8 @@ from django.db import models
 from user.models import User
 
 NULLABLE = {'null': True, 'blank': True}
+
+
 class Client(models.Model):
     """
     клиенты (получают рассылку) CRUD
@@ -19,14 +21,14 @@ class Client(models.Model):
     def __str__(self):
         return f'{self.fio} ({self.email})'
 
+
 class Message(models.Model):
     """
     письма CRUD
     """
-    subject = models.CharField(max_length=50,verbose_name='тема письма')
+    subject = models.CharField(max_length=50, verbose_name='тема письма')
     body = models.TextField(verbose_name='тело письма')
     owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
-
 
     class Meta:
         verbose_name = 'Сообщение'
@@ -34,6 +36,7 @@ class Message(models.Model):
 
     def __str__(self):
         return f'{self.subject}'
+
 
 class Newsletter(models.Model):
     """
@@ -45,24 +48,23 @@ class Newsletter(models.Model):
     time_last_shipment = models.DateTimeField(verbose_name='время последней отправки сообщения', blank=True, null=True)
 
     Periodicity = [
-        ('daily','раз в день'),
-        ('weekly','раз в неделю'),
-        ('monthly','раз в месяц')
+        ('daily', 'раз в день'),
+        ('weekly', 'раз в неделю'),
+        ('monthly', 'раз в месяц')
     ]
-    periodicity = models.CharField(max_length=20,verbose_name='периодичность',choices=Periodicity)
+    periodicity = models.CharField(max_length=20, verbose_name='периодичность', choices=Periodicity)
 
     Status = [
         ('finished', 'завершена'),
         ('created', 'создана'),
         ('launched', 'запущена')
     ]
-    status = models.CharField(max_length=20,verbose_name='статус рассылки',choices=Status)
+    status = models.CharField(max_length=20, verbose_name='статус рассылки', choices=Status)
 
-    client = models.ManyToManyField(Client,verbose_name='клиент')
-    message = models.ForeignKey(Message,verbose_name='сообщение',on_delete=models.CASCADE)
+    client = models.ManyToManyField(Client, verbose_name='клиент')
+    message = models.ForeignKey(Message, verbose_name='сообщение', on_delete=models.CASCADE)
     owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
     is_active = models.BooleanField(default=True, verbose_name='Включена/отключена')
-
 
     class Meta:
         verbose_name = "рассылка"
@@ -82,7 +84,7 @@ class Logs(models.Model):
     attempt_time = models.DateTimeField(verbose_name='дата и время последней попытки')
     attempt = models.CharField(max_length=50, verbose_name='статус попытки')
     comments = models.TextField(max_length=50, verbose_name='Комментарии', **NULLABLE)
-    response = models.TextField (verbose_name='ответ почтового сервера', **NULLABLE)
+    response = models.TextField(verbose_name='ответ почтового сервера', **NULLABLE)
     owner = models.ForeignKey(User, verbose_name='Владелец', null=True, blank=True, on_delete=models.SET_NULL)
 
     class Meta:
