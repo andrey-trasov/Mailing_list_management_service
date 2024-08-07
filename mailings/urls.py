@@ -23,6 +23,6 @@ urlpatterns = [
     path('newsletter_update/<int:pk>/', NewsletterUpdateView.as_view(), name='newsletter_update'),
     path('newsletter_delete/<int:pk>/', NewsletterDeleteView.as_view(), name='newsletter_delete'),
     path('newsletter/<int:pk>/', NewsletterDetailView.as_view(), name='newsletter_detail'),
-    path('logs_list/', cache_page(60)(LogsListView.as_view()), name='logs_list'),
-    path('', index_data, name='main')
+    path('logs_list/', LogsListView.as_view(), name='logs_list'),
+    path('', cache_page(60)(index_data), name='main')
 ]
