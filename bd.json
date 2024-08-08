@@ -1124,18 +1124,18 @@
 },
 {
     "model": "sessions.session",
-    "pk": "lqg01gn2759j5u42eot7am33rq7cgy97",
+    "pk": "9u5hqw2k64gnntrpaj6x0vxlfp5uzua1",
     "fields": {
-        "session_data": ".eJxVjM0OwiAQhN-FsyFFlh89eu8zkGVZpGpoUtqT8d2lSQ96m5lvZt4i4LaWsDVewpTEVVhx-s0i0pPrDtID632WNNd1maLcK_KgTY5z4tft6P4dFGylr7MGIO3YpmgUeeBzVx4cm4sbvNVE3L3KGVE5HjhZ0OzBM6MxFJX4fAH2ODim:1sbSaA:FYlodz6ppsul-QJZEaRB9VdDS0mI6HZzEkfr0tber5Y",
-        "expire_date": "2024-08-20T22:23:06.623Z"
+        "session_data": ".eJxVjM0OwiAQhN-FsyFFlh89eu8zkGVZpGpoUtqT8d2lSQ96m5lvZt4i4LaWsDVewpTEVVhx-s0i0pPrDtID632WNNd1maLcK_KgTY5z4tft6P4dFGylr7MGIO3YpmgUeeBzVx4cm4sbvNVE3L3KGVE5HjhZ0OzBM6MxFJX4fAH2ODim:1sbzsz:KEZjzkIG2OjaZ6QhwgUNPlzyvLtRZ_wIKYYAUj-dPwU",
+        "expire_date": "2024-08-22T09:56:45.902Z"
     }
 },
 {
     "model": "sessions.session",
-    "pk": "svk0cq25bzvijeyz4nu3syodmoyxq5qq",
+    "pk": "obv7wuar1rjw52g0jmnd8djgv3ooeh7o",
     "fields": {
-        "session_data": ".eJxVjMsOwiAQRf-FtSEUGR4u3fcbyAxDpWogKe3K-O_apAvd3nPOfYmI21ri1vMSZxYXMYjT70aYHrnugO9Yb02mVtdlJrkr8qBdjo3z83q4fwcFe_nWKoFjVPkMKQAHMuwUW8w2WQhh8qQTaG1V8NPAxCZ7Rg8AAb0BdiTeH-5cOB4:1sbTah:FoL57eL3MNeMk7zyaI37rCOsBHBgODhs3stHZhhGX00",
-        "expire_date": "2024-08-20T23:27:43.664Z"
+        "session_data": ".eJxVjMsOwiAQRf-FtSEUGR4u3fcbyAxDpWogKe3K-O_apAvd3nPOfYmI21ri1vMSZxYXMYjT70aYHrnugO9Yb02mVtdlJrkr8qBdjo3z83q4fwcFe_nWKoFjVPkMKQAHMuwUW8w2WQhh8qQTaG1V8NPAxCZ7Rg8AAb0BdiTeH-5cOB4:1sc2iF:LQu0KBtnf-sSL17JsYYuJX1h38xLmPRzT7959WDOre8",
+        "expire_date": "2024-08-22T12:57:51.159Z"
     }
 },
 {
@@ -1242,7 +1242,7 @@
         "name": "Гороскоп",
         "start_time": "2024-08-06T00:53:00Z",
         "end_time": "2024-09-17T00:56:00Z",
-        "time_last_shipment": "2024-08-06T22:21:49.424Z",
+        "time_last_shipment": "2024-08-08T13:01:13.605Z",
         "periodicity": "daily",
         "status": "launched",
         "message": 10,
@@ -1265,7 +1265,7 @@
         "end_time": "2024-08-08T00:57:00Z",
         "time_last_shipment": "2024-08-06T22:20:18.862Z",
         "periodicity": "weekly",
-        "status": "launched",
+        "status": "finished",
         "message": 5,
         "owner": 8,
         "is_active": true,
@@ -1329,6 +1329,19 @@
         "name": "Гороскоп",
         "mailing": 19,
         "attempt_time": "2024-08-06T22:21:53.046Z",
+        "attempt": "успешно",
+        "comments": "Успешно доставлено 3 клиентам из 4",
+        "response": "{'tests.python100@yandex.ruuuuuu': (550, b'non-local recipient verification failed')}",
+        "owner": 8
+    }
+},
+{
+    "model": "mailings.logs",
+    "pk": 50,
+    "fields": {
+        "name": "Гороскоп",
+        "mailing": 19,
+        "attempt_time": "2024-08-08T13:01:17.602Z",
         "attempt": "успешно",
         "comments": "Успешно доставлено 3 клиентам из 4",
         "response": "{'tests.python100@yandex.ruuuuuu': (550, b'non-local recipient verification failed')}",
@@ -1673,7 +1686,7 @@
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$600000$RlP39vwx8MSTNS3yDQhyg3$UQjy7D6/NnDQcpnXo9Sw3p4Cv+wU6wvDAq4ptVrf5M0=",
-        "last_login": "2024-08-06T23:27:43.663Z",
+        "last_login": "2024-08-08T12:57:51.154Z",
         "is_superuser": true,
         "first_name": "",
         "last_name": "",
@@ -1694,7 +1707,7 @@
     "pk": 6,
     "fields": {
         "password": "pbkdf2_sha256$600000$vqfFlxspK9NdEZcjWsFCa5$yeLzLTDFPPgjB7P7qwJ4+9d4k4FMuQOPphHYMrnU6Tk=",
-        "last_login": "2024-08-06T22:23:06.621Z",
+        "last_login": "2024-08-08T09:56:45.899Z",
         "is_superuser": false,
         "first_name": "",
         "last_name": "",
