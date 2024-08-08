@@ -44,9 +44,6 @@ class UserListView(ListView):
     model = User
 
     def get_queryset(self, *args, **kwargs):
-        """
-        показывает только клиентов созданных пользователем
-        """
         queryset = super().get_queryset(*args, **kwargs)
         queryset = queryset.exclude(email="admin@example.com")
         return queryset
