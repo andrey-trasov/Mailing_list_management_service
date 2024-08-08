@@ -11,7 +11,3 @@ class BlogDetailView(DetailView):
         self.object.count_of_view += 1  # увеличивает счетчик просмотров
         self.object.save()  # сохраняет изменения
         return self.object
-
-
-class BlogListView(ListView):
-    model = Blog
