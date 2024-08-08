@@ -24,5 +24,6 @@ urlpatterns = [
     path('newsletter_delete/<int:pk>/', NewsletterDeleteView.as_view(), name='newsletter_delete'),
     path('newsletter/<int:pk>/', NewsletterDetailView.as_view(), name='newsletter_detail'),
     path('logs_list/', LogsListView.as_view(), name='logs_list'),
-    path('', cache_page(60)(index_data), name='main')
+    # path('', cache_page(60)(index_data), name='main'),
+    path('', index_data, name='main')
 ]

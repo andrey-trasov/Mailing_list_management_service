@@ -7,6 +7,8 @@ from django.views.generic import ListView, CreateView, DetailView, UpdateView, D
 from blog.models import Blog
 from mailings.forms import ClientForm, MessageForm, NewsletterForm, NewsletterModeratorForm
 from mailings.models import Client, Message, Newsletter, Logs
+from mailings.services import get_uniq_clients_count, get_random_blogs, count_mailing_items, \
+    count_active_mailing_items
 
 
 # Клиенты
@@ -192,6 +194,26 @@ def index_data(request):
                'count_active_mailing_items': count_active_mailing_items,
                'count_unic_clients': count_unic_clients,
                'random_blogs': random_blogs,
+               }
+
+    return render(request, 'mailings/index.html', context)
+
+
+
+
+def index_data(request):
+    # count_mailing_items = Newsletter.objects.count()
+    # count_active_mailing_items = Newsletter.objects.filter(status='launched').count()
+    # clients = Client.objects.all()
+    # emails = []
+    # for client in clients:
+    #     emails.append(client.email)
+    # count_unic_clients = len(set(emails))
+    # random_blogs = Blog.objects.order_by('?')[:3]
+    context = {'count_mailing_items': count_mailing_items(),
+               'count_active_mailing_items': count_active_mailing_items(),
+               'count_unic_clients': get_uniq_clients_count(),
+               'random_blogs': get_random_blogs(),
                }
 
     return render(request, 'mailings/index.html', context)
