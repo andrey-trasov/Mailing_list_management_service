@@ -182,34 +182,6 @@ class BlogListView(ListView):
 
 
 def index_data(request):
-    count_mailing_items = Newsletter.objects.count()
-    count_active_mailing_items = Newsletter.objects.filter(status='launched').count()
-    clients = Client.objects.all()
-    emails = []
-    for client in clients:
-        emails.append(client.email)
-    count_unic_clients = len(set(emails))
-    random_blogs = Blog.objects.order_by('?')[:3]
-    context = {'count_mailing_items': count_mailing_items,
-               'count_active_mailing_items': count_active_mailing_items,
-               'count_unic_clients': count_unic_clients,
-               'random_blogs': random_blogs,
-               }
-
-    return render(request, 'mailings/index.html', context)
-
-
-
-
-def index_data(request):
-    # count_mailing_items = Newsletter.objects.count()
-    # count_active_mailing_items = Newsletter.objects.filter(status='launched').count()
-    # clients = Client.objects.all()
-    # emails = []
-    # for client in clients:
-    #     emails.append(client.email)
-    # count_unic_clients = len(set(emails))
-    # random_blogs = Blog.objects.order_by('?')[:3]
     context = {'count_mailing_items': count_mailing_items(),
                'count_active_mailing_items': count_active_mailing_items(),
                'count_unic_clients': get_uniq_clients_count(),
